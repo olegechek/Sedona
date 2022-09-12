@@ -1,1 +1,41 @@
-// Начните писать стили здесь
+// global
+
+@import "global/fonts.scss";
+@import "global/global.scss";
+@import "global/variables.scss";
+
+// blocks
+
+@import "blocks/page-header.scss";
+@import "blocks/site-list.scss";
+@import "blocks/features.scss";
+@import "blocks/hints.scss";
+@import "blocks/booking.scss";
+@import "blocks/button.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";
+
+
+@import "blocks/feedback.scss";
+@import "blocks/personal.scss";
+@import "blocks/contact.scss";
+@import "blocks/impression.scss";
+@import "blocks/attractions.scss";
+@import "blocks/review.scss";
+
+@import "blocks/photo.scss";
+@import "blocks/video.scss";
+
+
+
+
+.page {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: $grey-text;
+  text-transform: uppercase;
+}

@@ -1,0 +1,23 @@
+.feedback {
+  background-color: $white;
+}
+
+.feedback__title {
+  color: $black;
+  font-style: bold;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.feedback__intro {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.feedback__form {
+  background-color: $white;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 26px;
+}

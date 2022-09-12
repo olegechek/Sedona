@@ -1,0 +1,29 @@
+.personal {
+  border: none;
+}
+
+.personal__legend {
+  font-style: bold;
+  color: $black;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.personal__list {
+  list-style: none;
+}
+
+.personal__data {
+  border: none;
+  color: $black;
+  background-color: $grey-100;
+  font-style: bold;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+/*.personal__data::-webkit-input-placeholder {
+  color: $black;
+}*/

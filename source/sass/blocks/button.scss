@@ -1,0 +1,16 @@
+.button {
+  display: inline-block;
+  height: 58px;
+  width: 280px;
+  text-align: center;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: $blue;
+  color: $white;
+  font-style: bold;
+  font-size: 21px;
+  line-height: 26px;
+  border: none;
+}

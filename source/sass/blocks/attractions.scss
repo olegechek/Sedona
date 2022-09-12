@@ -1,0 +1,24 @@
+.attractions {
+  border: none;
+}
+
+.attractions__legend {
+  font-style: bold;
+  color: $black;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.attractions__list {
+  list-style: none;
+}
+
+.attractions__item-label {
+  text-transform: none;
+  color: $black;
+  font-style: bold;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}

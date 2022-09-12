@@ -1,0 +1,25 @@
+.contact {
+  border: none;
+}
+
+.contact__legend {
+  font-style: bold;
+  color: $black;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.contact__list {
+  list-style: none;
+}
+
+.contact__data {
+  border: none;
+  color: $black;
+  background-color: $grey-100;
+  font-style: bold;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}

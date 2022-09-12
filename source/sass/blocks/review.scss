@@ -1,0 +1,22 @@
+.review {
+  border: none;
+}
+
+.review__legend {
+  font-style: bold;
+  color: $black;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+
+.review__textarea {
+  border: none;
+  color: $black;
+  background-color: $grey-100;
+  font-style: bold;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}

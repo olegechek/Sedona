@@ -1,0 +1,24 @@
+.impression {
+  border: none;
+}
+
+.impression__legend {
+  font-style: bold;
+  color: $black;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.impression__list {
+  list-style: none;
+}
+
+.impression__item-label {
+  text-transform: none;
+  color: $black;
+  font-style: bold;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}

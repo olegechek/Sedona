@@ -1,0 +1,19 @@
+.video {
+  background-color: $white;
+}
+
+
+.video__title {
+  font-style: bold;
+  color: $black;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.video__intro {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}

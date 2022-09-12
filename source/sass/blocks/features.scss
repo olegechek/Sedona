@@ -1,0 +1,63 @@
+.features {
+  background-color: $white;
+}
+
+
+
+.features__slogan {
+  font-family: "PT Sans";
+  color: $black;
+  font-style: bold;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.features__intro {
+  line-height: 26px;
+}
+
+
+.features__list {
+  list-style: none;
+}
+
+.features__item {
+  background-color: $grey;
+}
+
+.features__item--alternative:first-child {
+  background-color: $blue;
+  color: $white;
+  height: 471px;
+  width: 320px;
+  overflow: hidden;
+  background-image: url("../img/Photo/features-real-town.png");
+  background-repeat: no-repeat;
+  background-size: 520px 260px;
+  background-position: center bottom;
+}
+
+.features__item--alternative:nth-child(3) {
+  background-color: $blue;
+  color: $white;
+  height: 471px;
+  width: 320px;
+  overflow: hidden;
+  background-image: url("../img/Photo/features-devil-bridge.png");
+  background-repeat: no-repeat;
+  background-size: 520px 260px;
+  background-position: center bottom;
+}
+
+
+.features__headline {
+  color: $black;
+  font-style: bold;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.features__headline--alternative {
+  color: $white;
+}

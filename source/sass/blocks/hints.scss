@@ -1,0 +1,18 @@
+.hints {
+  background-color: $white;
+}
+
+.hints__list {
+  list-style: none;
+}
+
+.hints__headline {
+  color: $black;
+  font-style: bold;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.hints__description {
+  color: $grey-text;
+}

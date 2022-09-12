@@ -3,28 +3,31 @@
 
 <head>
   <meta charset="utf-8">
+  <link href="css/style.css" rel="stylesheet">
   <title>Sedona</title>
 </head>
 
 <body class="page__body">
   <header class="page-header">
     <a class="page-header__logo" href="index.html">
-      <img src="img/logotype.svg" width="102" height="84" alt="город Седона">
+      <img src="img/logotype.svg" width="102" height="84" alt="Символ города Седона">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__button" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <button class="main-nav__button" type="button">
+        <span>Открыть меню</span>
+      </button>
       <ul class="site-list">
         <li class="site-list__item">
-          <a href="index.html">Главная</a>
+          <a class="site-list__item-link" href="index.html">Главная</a>
         </li>
         <li class="site-list__item">
-          <a href="catalog.html">Фото и видео</a>
-        </li>
-        <li class="site-list__item site-list__item--active">
-          <a>Форма отзыва</a>
+          <a class="site-list__item-link" href="catalog.html">Фото и видео</a>
         </li>
         <li class="site-list__item">
-          <a href="https://htmlacademy.ru/">HTML Academy</a>
+          <a class="site-list__item-link site-list__item-link--active">Форма отзыва</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__item-link" href="https://htmlacademy.ru/">HTML Academy</a>
         </li>
       </ul>
     </nav>
@@ -47,19 +50,19 @@
             <li class="personal__item">
               <label class="personal__item-label">
                 Имя:
-                <input class="personal__name" type="text" name="name" id="name-slot" placeholder="Петр">
+                <input class="personal__data" type="text" name="name" id="name-slot" placeholder="Петр">
               </label>
             </li>
             <li class="personal__item">
               <label class="personal__item-label">
                 Фамилия:
-                <input class="personal__surname" type="text" name="surname" id="surname-slot" placeholder="Иванов">
+                <input class="personal__data" type="text" name="surname" id="surname-slot" placeholder="Иванов">
               </label>
             </li>
             <li class="personal__item">
               <label class="personal__item-label">
                 Отчество:
-                <input class="personal__patronymic" type="text" name="patronimyc" id="patronymic-slot"
+                <input class="personal__data" type="text" name="patronimyc" id="patronymic-slot"
                   placeholder="Александрович">
               </label>
             </li>
@@ -72,13 +75,13 @@
             <li class="contact__item">
               <label class="contact__item-label">
                 Контактный телефон:
-                <input class="contact__tel" type="tel" name="tel" id="tel-slot" placeholder="Введите телефон">
+                <input class="contact__data" type="tel" name="tel" id="tel-slot" placeholder="Введите телефон">
               </label>
             </li>
             <li class="contact__item">
               <label class="contact__item-label">
                 Электронная почта:
-                <input class="contact__email" type="email" name="email" id="email-slot" placeholder="Введите e-mail">
+                <input class="contact__data" type="email" name="email" id="email-slot" placeholder="Введите e-mail">
               </label>
             </li>
           </ul>
@@ -144,7 +147,7 @@
               placeholder="Опишите подробно все свои восторги"></textarea>
           </label>
         </fieldset>
-        <button class="feedback__button" type="submit">Отправить отзыв</button>
+        <button class="button feedback__button" type="submit">Отправить отзыв</button>
       </form>
     </section>
 
