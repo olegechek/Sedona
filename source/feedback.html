@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <link href="css/style.css" rel="stylesheet">
   <title>Sedona</title>
+  <meta name="viewport" content="width=device-width, initial-scale-1">
 </head>
 
 <body class="page__body">
@@ -12,10 +13,10 @@
     <a class="page-header__logo" href="index.html">
       <img src="img/logotype.svg" width="102" height="84" alt="Символ города Седона">
     </a>
-    <nav class="main-nav">
-      <button class="main-nav__button" type="button">
-        <span>Открыть меню</span>
-      </button>
+    <button class="page-header__button" type="button">
+      <span>Открыть меню</span>
+    </button>
+    <nav class="page-header__navigation">
       <ul class="site-list">
         <li class="site-list__item">
           <a class="site-list__item-link" href="index.html">Главная</a>
@@ -33,9 +34,9 @@
     </nav>
   </header>
 
-  <main class="page-main">
+  <main class="page-main page__body--container">
     <h1 class="visually-hidden">Форма обратной связи</h1>
-    <section class="feedback">
+    <section class="feedback page__body--container">
       <header class="feedback__header">
         <h2 class="feedback__title">Оставьте свой отзыв</h2>
         <p class="feedback__intro">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
@@ -44,7 +45,7 @@
 
       <form class="feedback__form" method="get" action="https://echo.htmlacademy.ru">
 
-        <fieldset class="personal">
+        <fieldset class="feedback__form-personal personal">
           <legend class="personal__legend">Представьтесь:</legend>
           <ul class="personal__list">
             <li class="personal__item">
@@ -69,7 +70,7 @@
           </ul>
         </fieldset>
 
-        <fieldset class="contact">
+        <fieldset class="feedback__form-contact contact">
           <legend class="contact__legend">Контактная информация:</legend>
           <ul class="contact__list">
             <li class="contact__item">
@@ -87,7 +88,7 @@
           </ul>
         </fieldset>
 
-        <fieldset class="impression">
+        <fieldset class="feedback__form-impression impression">
           <legend class="impression__legend">Ваше общее впечатление:</legend>
           <ul class="impression__list">
             <li class="impression__item">
@@ -111,7 +112,7 @@
           </ul>
         </fieldset>
 
-        <fieldset class="attractions">
+        <fieldset class="feedback__form-attractions attractions">
           <legend class="attractions__legend">Посещенные достопримечательности:</legend>
           <ul class="attractions__list">
             <li class="attractions__item">
@@ -140,7 +141,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="review">
+        <fieldset class="feedback__form-review review">
           <legend class="review__legend">Опишите свои эмоции:</legend>
           <label class="review__label">
             <textarea class="review__textarea" name="review-form" id="review-form"
@@ -148,13 +149,13 @@
           </label>
         </fieldset>
         <button class="button feedback__button" type="submit">Отправить отзыв</button>
+        <p class="feedback__comment">* - обязательные поля</p>
       </form>
     </section>
 
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__map"></div>
     <div class="page-footer__hashtag">#VisitSedona</div>
     <div class="page-footer__social social">
       <ul class="social__list">

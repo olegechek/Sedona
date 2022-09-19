@@ -1,5 +1,6 @@
 .video {
   background-color: $white;
+  margin: 0 auto;
 }
 
 
@@ -9,6 +10,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  text-align: center;
 }
 
 .video__intro {
@@ -16,4 +18,27 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
+  text-align: center;
+}
+
+.video__clip {
+  width: 280px;
+  height: 280px;
+  position: relative;
+  left: calc(50% - 140px);
+  margin: 0 auto;
+}
+
+
+/********* T A B L E T     T U N E S **********************/
+
+@media (min-width: $tablet-width) {
+  .video__clip {
+    width: 648px;
+    height: 500px;
+    position: relative;
+    left: calc(50% - 324px);
+    margin: 0 auto;
+  }
+
 }

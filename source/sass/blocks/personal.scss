@@ -1,5 +1,10 @@
 .personal {
   border: none;
+  /*width: 320px;
+
+  padding: 0 auto;
+  margin: 0 auto;*/
+
 }
 
 .personal__legend {
@@ -8,10 +13,13 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  text-align: center;
 }
 
 .personal__list {
   list-style: none;
+  padding: 0;
+  text-align: left;
 }
 
 .personal__data {

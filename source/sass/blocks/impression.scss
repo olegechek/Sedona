@@ -1,5 +1,7 @@
 .impression {
   border: none;
+  padding: 0;
+  margin: 0;
 }
 
 .impression__legend {
@@ -12,6 +14,9 @@
 
 .impression__list {
   list-style: none;
+  text-align: left;
+  padding: 0;
+  margin: 0;
 }
 
 .impression__item-label {

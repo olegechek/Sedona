@@ -1,5 +1,7 @@
 .photo {
   background-color: $white;
+  padding: 0;
+  margin: 0;
 }
 
 .photo__title {
@@ -8,6 +10,9 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
 }
 
 .photo__intro {
@@ -15,10 +20,21 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
 }
 
 .photo__list {
   list-style: none;
+  width: fit-content;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.photo__item {
+  display: flex;
+  flex-direction: column;
 }
 
 .photo__name {
@@ -27,6 +43,10 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 24px;
+
+  text-align: left;
+  padding: 0;
+  margin: 0;
 }
 
 .photo__author {
@@ -36,6 +56,10 @@
   font-size: 14px;
   line-height: 24px;
   text-transform: none;
+
+  text-align: left;
+  padding: 0;
+  margin: 0;
 }
 
 .photo__likes {
@@ -44,4 +68,46 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 24px;
+
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+
+.photo__image {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  order: -1;
+}
+
+
+
+/********* T A B L E T     T U N E S **********************/
+
+@media (min-width: $tablet-width) {
+
+  .photo__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+  }
+
+  .photo__item {
+    background-color: $grey-100;
+  }
+
+  .photo__item:first-child {
+    grid-column: span 2;
+  }
+
+  .photo__item:first-child .photo__image {
+    width: 648px;
+    height: 400px;
+  }
+
+  .photo__image {
+    width: 324px;
+    height: 267px;
+  }
 }

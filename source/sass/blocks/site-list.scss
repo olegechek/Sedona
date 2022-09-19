@@ -2,13 +2,16 @@
   font-family: "PT Sans";
   list-style: none;
   background-color: $white;
-  max-width: 320px;
   padding: 0;
   margin: 0;
+  min-width: 320px;
+
 }
 
 
 .site-list__item {
+  display: block;
+  height: 56px;
   font-style: bold;
   font-weight: 700;
   font-size: 18px;
@@ -16,6 +19,7 @@
   color: $white;
   background-color: $blue;
   border-bottom: 1px;
+  padding-top: 10px;
 }
 
 
@@ -34,3 +38,56 @@
   color: $white;
   text-align: center;
 }
+
+
+
+
+/********* T A B L E T     T U N E S **********************/
+
+@media (min-width: $tablet-width) {
+
+  .site-list {
+    min-height: 56px;
+    min-width: 768px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+
+  .site-list__item {
+    font-style: bold;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 26px;
+    color: $black;
+    background-color: $white;
+    border: none;
+    width: 153px;
+    height: auto;
+    padding: 0;
+  }
+
+   .site-list__item:nth-child(4n+2) {
+    margin-right: 156px;
+   }
+
+
+  .site-list__item:not(:last-child) {
+    border-bottom: none;
+  }
+
+
+  .site-list__item:not(:first-child) {
+    border-bottom: none;
+  }
+
+  .site-list__item-link {
+    color: $black;
+    text-align: center;
+  }
+
+}
+

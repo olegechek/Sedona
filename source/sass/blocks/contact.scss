@@ -1,5 +1,7 @@
 .contact {
   border: none;
+  padding: 0;
+  margin: 0;
 }
 
 .contact__legend {
@@ -12,6 +14,9 @@
 
 .contact__list {
   list-style: none;
+  text-align: left;
+  padding: 0;
+  margin: 0;
 }
 
 .contact__data {

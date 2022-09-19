@@ -1,18 +1,45 @@
 .hints {
   background-color: $white;
+  text-align: left;
+  padding: 0;
+  margin: 0;
 }
 
 .hints__list {
   list-style: none;
+  min-height: 416px;
+  margin: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 35px;
+  padding-bottom: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
+
 
 .hints__headline {
   color: $black;
   font-style: bold;
   font-size: 18px;
   line-height: 26px;
+  padding: 0;
+  margin: 0;
 }
 
 .hints__description {
   color: $grey-text;
+}
+
+
+@media (min-width: $tablet-width) {
+  .hints {
+    grid-column: span 3;
+  }
+
+  .hints__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }

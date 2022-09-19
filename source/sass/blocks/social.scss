@@ -1,7 +1,15 @@
 .social {
+  display: block;
   background-color: $white;
+  padding: 0;
+  margin: 0;
 }
 
 .social__list {
   list-style: none;
+  padding:0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  column-gap: 5px;
 }

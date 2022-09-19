@@ -1,5 +1,7 @@
 .attractions {
   border: none;
+  padding: 0;
+  margin: 0;
 }
 
 .attractions__legend {
@@ -12,6 +14,9 @@
 
 .attractions__list {
   list-style: none;
+  text-align: left;
+  padding: 0;
+  margin: 0;
 }
 
 .attractions__item-label {

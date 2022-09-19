@@ -1,14 +1,6 @@
 .page-footer {
   background-color: $white;
-}
-
-.page-footer__map {
-  height: 350px;
-  width: 320px;
-  background-color: $white;
-  background-image: url("../img/Photo/map-mobile.png");
-  background-repeat: no-repeat;
-  background-size: auto;
+  text-align: center;
 }
 
 .page-footer__hashtag {
@@ -17,4 +9,15 @@
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+}
+
+
+
+/********* T A B L E T     T U N E S **********************/
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
