@@ -1,7 +1,13 @@
 .features {
   background-color: $white;
+  text-align: center;
+  padding: 0;
+  margin: 0;
 }
 
+.features__header {
+  min-height: 205px;
+}
 
 
 .features__slogan {
@@ -11,42 +17,80 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  margin: 0;
+  padding-left: 26px;
+  padding-right: 30px;
+  padding-top: 32px;
+  padding-bottom: 25px;
 }
+
 
 .features__intro {
   line-height: 26px;
+  margin: 0;
+  padding-top: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 50px;
 }
 
 
 .features__list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
+
 
 .features__item {
   background-color: $grey;
+  margin: 0;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 35px;
+  padding-right: 35px;
+  height: 168px;
 }
 
-.features__item--alternative:first-child {
+.features__item--alternative {
+  padding: 0;
+  margin: 0;
+  height: auto;
+}
+
+.features__item--alternative-text-block{
+  display: block;
   background-color: $blue;
   color: $white;
-  height: 471px;
-  width: 320px;
+  height: 190px;
+  padding-top: 35px;
+  padding-bottom: 25px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.features__item--alternative-img-block1{
+  height: 260px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
   overflow: hidden;
-  background-image: url("../img/Photo/features-real-town.png");
+  background-image: url("../img/Photo/features-real-town-all.png");
   background-repeat: no-repeat;
-  background-size: 520px 260px;
+  background-size: 800px 260px;
   background-position: center bottom;
 }
 
-.features__item--alternative:nth-child(3) {
-  background-color: $blue;
-  color: $white;
-  height: 471px;
-  width: 320px;
+
+.features__item--alternative-img-block2{
+  height: 260px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
   overflow: hidden;
-  background-image: url("../img/Photo/features-devil-bridge.png");
+  background-image: url("../img/Photo/features-devil-bridge-desktop.png");
   background-repeat: no-repeat;
-  background-size: 520px 260px;
+  background-size: 800px 260px;
   background-position: center bottom;
 }
 
@@ -56,8 +100,72 @@
   font-style: bold;
   font-size: 18px;
   line-height: 26px;
+  margin: 0;
+  padding-bottom: 10px;
 }
+
 
 .features__headline--alternative {
   color: $white;
+}
+
+
+.features__number {
+  margin: 0;
+  padding-bottom: 16px;
+}
+
+
+.features__description {
+  margin: 0;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+
+
+
+/********* T A B L E T     T U N E S **********************/
+
+@media (min-width: $tablet-width) {
+
+  .features__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .features__item--alternative {
+    grid-column: span 3;
+    grid-row: span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .features__item--alternative-text-block{
+    height: 256px;
+    min-width: 256px;
+  }
+
+  .features__item--alternative-img-block1{
+    grid-column: span 2;
+    height: 256px;
+    width: 100%;
+    overflow: hidden;
+    background-image: url("../img/Photo/features-real-town-all.png");
+    background-repeat: no-repeat;
+    background-size: 800px 256px;
+    background-position: center bottom;
+  }
+
+  .features__item--alternative-img-block2{
+    grid-column: span 2;
+    height: 256px;
+    width: 100%;
+    overflow: hidden;
+    background-image: url("../img/Photo/features-devil-bridge-desktop.png");
+    background-repeat: no-repeat;
+    background-size: 800px 256px;
+    background-position: center bottom;
+    order: -1;
+  }
 }
