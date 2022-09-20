@@ -49,6 +49,7 @@
   .site-list {
     min-height: 56px;
     min-width: 768px;
+    max-width: 920px;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
@@ -65,13 +66,17 @@
     color: $black;
     background-color: $white;
     border: none;
-    width: 153px;
+    min-width: 153px;
     height: auto;
     padding: 0;
   }
 
    .site-list__item:nth-child(4n+2) {
-    margin-right: 156px;
+    margin-right: 78px;
+   }
+
+   .site-list__item:nth-child(4n+3) {
+    margin-left: 78px;
    }
 
 

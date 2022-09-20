@@ -1,12 +1,20 @@
 .page-header {
+  position: relative;
   padding-bottom: 446px;
   overflow: hidden;
   background-color: $white;
-  background-image: url("../img/Photo/back-picture.png");
-  background-repeat: no-repeat;
-  background-size: 901px 390px;
-  background-position: center bottom;
-  position: relative;
+  background-image: url("../img/Photo/page-header-triangle.svg"),
+                    url("../img/Photo/Main-slogan-index-mobile.svg"),
+                    url("../img/Photo/back-picture.png");
+  background-repeat: no-repeat,
+                     no-repeat,
+                     no-repeat;
+  background-size: 1200px 57px,
+                   282px 214px,
+                   901px 390px;
+  background-position: center bottom,
+                       center bottom 89px,
+                       center bottom;
 }
 
 .page-header__logo {
@@ -18,8 +26,52 @@
 
 .page-header__button {
   position: absolute;
-  bottom: 400px;
-  right: 10px;
+  cursor: pointer;
+  width: 23px;
+  height: 22px;
+  border: none;
+  background-color: $white;
+  background-image: url("../img/Photo/page-header-button.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  bottom: 408px;
+  right: 20px;
+}
+
+
+
+
+/************ O N L Y   M O B I L E   T U N E S ******************/
+
+
+@media (max-width: $mobile-width-only) {
+
+  .page-header__navigation {
+    position: relative;
+  }
+
+  .page-header__close-button {
+    position: absolute;
+    content: "";
+    cursor: pointer;
+    border: none;
+    background-color: $blue;
+    width: 22px;
+    height: 22px;
+    background-image: url("../img/Photo/page-header-close-button.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 19px;
+    right: 21px;
+  }
+
+  .page-header__navigation--mobile-closed {
+    display: none;
+  }
+
+  .page-header__navigation--no-js {
+    display: block;
+  }
 }
 
 
@@ -29,14 +81,23 @@
 @media (min-width: $tablet-width) {
 
   .page-header {
+  position: relative;
   padding-bottom: 520px;
   overflow: hidden;
   background-color: $white;
-  background-image: url("../img/Photo/back-picture.png");
-  background-repeat: no-repeat;
-  background-size: 1200px 520px;
-  background-position: center bottom;
-  position: relative;
+  background-image: url("../img/Photo/page-header-triangle.svg"),
+                    url("../img/Photo/Main-slogan-index-mobile.svg"),
+                    url("../img/Photo/back-picture.png");
+  background-repeat: no-repeat,
+                     no-repeat,
+                     no-repeat;
+  background-size: 1200px 57px,
+                   460px 350px,
+                   1200px 520px;
+  background-position: center bottom,
+                       center bottom 89px,
+                       center bottom;
+
   }
 
   .page-header__logo {
@@ -47,6 +108,12 @@
   }
 
   .page-header__button {
+    position: absolute;
+    display: none;
+  }
+
+
+  .page-header__close-button {
     position: absolute;
     display: none;
   }
