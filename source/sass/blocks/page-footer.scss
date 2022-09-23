@@ -1,5 +1,9 @@
 .page-footer {
   background-color: $white;
+  min-height: 243px;
+  padding: 0;
+  padding-top: 36px;
+  margin: 0;
   text-align: center;
 }
 
@@ -9,15 +13,67 @@
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+  padding: 0;
+  padding-bottom: 35px;
+  margin: 0;
 }
 
+.page-footer__social {
+  display: block;
+  padding-bottom: 30px;
+
+}
 
 
 /********* T A B L E T     T U N E S **********************/
 
 @media (min-width: $tablet-width) {
   .page-footer {
+    min-height: 120px;
+    padding: 0;
+    margin: 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+  }
+  .page-footer__hashtag {
+    padding: 0;
+    margin: 0;
+  }
+
+  .page-footer__social {
+    padding: 0;
+    margin: 0;
+  }
+
+  .page-footer__copyright {
+   padding: 0;
+   margin: 0;
   }
 }
+
+
+/******************* D E S K T O P    T U N E S **********************/
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    column-gap: 30px;
+  }
+  .page-footer__hashtag {
+    padding: 0;
+    margin: 0;
+    padding-top: 5px;
+    padding-right: 5px;
+  }
+
+  .page-footer__copyright {
+    padding: 0;
+    margin: 0;
+    padding-left: 9px;
+    padding-top: 1px;
+   }
+
+
+
+}
+

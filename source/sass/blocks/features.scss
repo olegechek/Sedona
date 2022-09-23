@@ -6,7 +6,22 @@
 }
 
 .features__header {
-  min-height: 205px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.features__header::after {
+  content: "";
+  display: block;
+  position: relative;
+  width: auto;
+  height: 37px;
+  background-image: url("../img/Decorations/features-header-triangle.svg");
+  background-repeat: no-repeat;
+  background-color: $blue;
+  background-size: 768px 37px;
+  background-position: center bottom;
+  bottom: -12px;
 }
 
 
@@ -31,7 +46,7 @@
   padding-top: 5px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 50px;
+  padding-bottom: 0px;
 }
 
 
@@ -45,31 +60,32 @@
 .features__item {
   background-color: $grey;
   margin: 0;
-  padding-top: 25px;
+  padding-top: 27px;
   padding-bottom: 25px;
   padding-left: 35px;
   padding-right: 35px;
-  height: 168px;
+  min-height: 168px;
 }
 
 .features__item--alternative {
+  background-color: $white;
   padding: 0;
   margin: 0;
   height: auto;
 }
 
-.features__item--alternative-text-block{
+.features__item--alternative-text-block {
   display: block;
   background-color: $blue;
   color: $white;
-  height: 190px;
-  padding-top: 35px;
+  min-height: 190px;
+  padding-top: 39px;
   padding-bottom: 25px;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-.features__item--alternative-img-block1{
+.features__item--alternative-img-block1 {
   height: 260px;
   width: 100%;
   padding: 0;
@@ -82,7 +98,7 @@
 }
 
 
-.features__item--alternative-img-block2{
+.features__item--alternative-img-block2 {
   height: 260px;
   width: 100%;
   padding: 0;
@@ -101,9 +117,13 @@
   font-size: 18px;
   line-height: 26px;
   margin: 0;
-  padding-bottom: 10px;
+  padding-bottom: 11px;
 }
 
+.features__headline br {
+  display: none;
+
+}
 
 .features__headline--alternative {
   color: $white;
@@ -112,7 +132,7 @@
 
 .features__number {
   margin: 0;
-  padding-bottom: 16px;
+  padding-bottom: 17px;
 }
 
 
@@ -122,31 +142,68 @@
   padding-right: 0px;
 }
 
-
+.features__description br {
+  display: none;
+}
 
 
 /********* T A B L E T     T U N E S **********************/
 
 @media (min-width: $tablet-width) {
 
+  .features__header {
+    position: relative;
+    padding-top: 13px;
+    padding-bottom: 10px;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-bottom: 50px;
+  }
+
+  .features__header::after {
+    display: none;
+  }
+
+  .features__slogan {
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+
   .features__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
 
+
+  .features__item {
+    min-height: 256px;
+    padding-top: 44px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
   .features__item--alternative {
-    grid-column: span 3;
-    grid-row: span 2;
+    padding: 0;
+    margin: 0;
+    height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-column: span 3;
+    grid-row: span 2;
+    align-items: end;
   }
 
-  .features__item--alternative-text-block{
+  .features__item--alternative-text-block {
     height: 256px;
     min-width: 256px;
+    padding-top: 45px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
-  .features__item--alternative-img-block1{
+  .features__item--alternative-img-block1 {
     grid-column: span 2;
     height: 256px;
     width: 100%;
@@ -157,7 +214,7 @@
     background-position: center bottom;
   }
 
-  .features__item--alternative-img-block2{
+  .features__item--alternative-img-block2 {
     grid-column: span 2;
     height: 256px;
     width: 100%;
@@ -167,5 +224,51 @@
     background-size: 800px 256px;
     background-position: center bottom;
     order: -1;
+  }
+
+  .features__headline {
+    font-size: 21px;
+    padding-bottom: 12px;
+  }
+
+  .features__headline br {
+    display: inline;
+  }
+
+  .features__number {
+    margin: 0;
+    padding-bottom: 23px;
+  }
+
+  .features__description {
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+}
+
+
+/******************* D E S K T O P    T U N E S **********************/
+
+@media (min-width: $desktop-width) {
+  .features__header {
+    position: relative;
+    padding-top: 21px;
+    padding-bottom: 15px;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-bottom: 41px;
+  }
+
+
+  .features__item--alternative-text-block {
+    padding-top: 51px;
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+
+  .features__description br {
+    display: inline;
   }
 }

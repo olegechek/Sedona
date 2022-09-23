@@ -96,3 +96,25 @@
 
 }
 
+/********* D E S K T O P    W I D T H **********************/
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    min-width: auto;
+    max-width: 1200px;
+  }
+
+  .site-list__item {
+    width: 239px;
+  }
+
+  .site-list__item:nth-child(4n+2) {
+    margin-right: 122px;
+   }
+
+   .site-list__item:nth-child(4n+3) {
+    margin-left: 122px;
+   }
+
+
+}

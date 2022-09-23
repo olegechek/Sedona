@@ -3,19 +3,39 @@
   padding-bottom: 446px;
   overflow: hidden;
   background-color: $white;
-  background-image: url("../img/Photo/page-header-triangle.svg"),
+  background-image: url("../img/Decorations/page-header-triangle.svg"),
                     url("../img/Photo/Main-slogan-index-mobile.svg"),
                     url("../img/Photo/back-picture.png");
   background-repeat: no-repeat,
                      no-repeat,
                      no-repeat;
   background-size: 1200px 57px,
-                   282px 214px,
+                   229px 39px,
                    901px 390px;
   background-position: center bottom,
                        center bottom 89px,
                        center bottom;
 }
+
+.page-header--short-version {
+  position: relative;
+  padding-bottom: 370px;
+  overflow: hidden;
+  background-color: $white;
+  background-image: url("../img/Decorations/page-header-triangle.svg"),
+                    url("../img/Photo/Main-slogan-noindex.svg"),
+                    url("../img/Photo/back-picture.png");
+  background-repeat: no-repeat,
+                     no-repeat,
+                     no-repeat;
+  background-size: 1200px 57px,
+                   282px 214px,
+                   902px 214px;
+  background-position: center bottom,
+                       center bottom 89px,
+                       center bottom;
+}
+
 
 .page-header__logo {
   position: absolute;
@@ -31,7 +51,7 @@
   height: 22px;
   border: none;
   background-color: $white;
-  background-image: url("../img/Photo/page-header-button.svg");
+  background-image: url("../img/Icons/page-header-button.svg");
   background-repeat: no-repeat;
   background-position: center;
   bottom: 408px;
@@ -58,7 +78,7 @@
     background-color: $blue;
     width: 22px;
     height: 22px;
-    background-image: url("../img/Photo/page-header-close-button.svg");
+    background-image: url("../img/Icons/page-header-close-button.svg");
     background-repeat: no-repeat;
     background-position: center;
     top: 19px;
@@ -81,23 +101,11 @@
 @media (min-width: $tablet-width) {
 
   .page-header {
-  position: relative;
+
   padding-bottom: 520px;
-  overflow: hidden;
-  background-color: $white;
-  background-image: url("../img/Photo/page-header-triangle.svg"),
-                    url("../img/Photo/Main-slogan-index-mobile.svg"),
-                    url("../img/Photo/back-picture.png");
-  background-repeat: no-repeat,
-                     no-repeat,
-                     no-repeat;
   background-size: 1200px 57px,
                    460px 350px,
                    1200px 520px;
-  background-position: center bottom,
-                       center bottom 89px,
-                       center bottom;
-
   }
 
   .page-header__logo {
@@ -105,6 +113,7 @@
     top: 0px;
     left: 50%;
     transform: translateX(-50%);
+    content: url("../img/logotype-tablet.svg");
   }
 
   .page-header__button {
@@ -118,3 +127,13 @@
     display: none;
   }
 }
+
+
+/********* D E S K T O P    T U N E S **********************/
+
+@media (min-width: $desktop-width) {
+  .page-header__logo {
+  content: url("../img/logotype-desktop.svg");
+  }
+}
+

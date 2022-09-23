@@ -1,15 +1,19 @@
 .booking {
   background-color: $white;
   padding: 0;
+  padding-bottom: 50px;
   margin: 0;
   text-align: center;
-  margin-left: 20px;
-  margin-right: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .booking__headline {
   color: $black;
   font-style: bold;
+  padding: 0;
+  padding-top: 30px;
+  margin: 0;
   font-size: 21px;
   line-height: 26px;
 }
@@ -18,9 +22,58 @@
   font-style: normal;
   font-size: 14px;
   line-height: 24px;
+  padding: 0;
+  padding-top: 21px;
+  padding-bottom: 29px;
+  margin: 0;
 }
 
 .booking__link {
   margin: 0;
   padding: 0;
+  width: 280px;
+}
+
+
+/********* T A B L E T     T U N E S **********************/
+
+@media (min-width: $tablet-width) {
+  .booking {
+    min-height: 318px;
+    margin: 0;
+    padding-top: 30px;
+    padding-left: 155px;
+    padding-right: 155px;
+    padding-bottom: 60px;
+  }
+
+
+  .booking__headline {
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+
+  .booking__description {
+    padding-bottom: 38px;
+  }
+
+  .booking__link {
+    width: 458px;
+    margin-right: auto;
+  }
+
+}
+
+
+/******************* D E S K T O P    T U N E S **********************/
+
+@media (min-width: $desktop-width) {
+  .booking {
+    padding-left: 371px;
+    padding-right: 371px;
+    padding-bottom: 65px;
+  }
+  .booking__description {
+    padding-bottom: 43px;
+  }
 }
