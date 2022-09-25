@@ -1,0 +1,64 @@
+.welcome-block {
+  padding: 0;
+  margin: 0;
+  height: 390px;
+  overflow: hidden;
+  background-color: $white;
+  background-image: url("../img/Decorations/page-header-triangle.svg"),
+                    url("../img/Photo/back-picture.png");
+  background-repeat: no-repeat,
+                     no-repeat;
+  background-size: 1200px 57px,
+                   901px 390px;
+  background-position: center bottom,
+                       center bottom;
+}
+
+
+.welcome-block--short {
+  height: 158px;
+  background-image: url("../img/Decorations/page-header-triangle.svg"),
+                    url("../../img/Photo/back-mobile.jpg");
+  background-repeat: no-repeat,
+                     no-repeat;
+  background-size: 1200px 57px,
+                   902px 392px;
+  background-position: center bottom,
+                       center bottom;
+}
+
+.welcome-block__title {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  left: calc(50% - 141px);
+  top: calc(50% - 107px);
+}
+
+.welcome-block__title--short {
+  width: 230px;
+  height: 40px;
+  content: url("../../img/Photo/Main-slogan-noindex.svg");
+  left: calc(50% - 115px);
+  top: calc(50% - 28px);
+}
+
+
+/********* T A B L E T     T U N E S **********************/
+
+@media (min-width: $tablet-width) {
+
+  .welcome-block {
+    height: 520px;
+    background-size: 1200px 57px,
+                      1200px 518px;
+  }
+
+
+  .welcome-block__title {
+    width: 460px;
+    height: 350px;
+    left: calc(50% - 230px);
+    top: calc(50% - 180px);
+  }
+}

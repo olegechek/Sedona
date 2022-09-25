@@ -9,7 +9,7 @@
 </head>
 
 <body class="page__body">
-  <header class="page-header page-header--short-version">
+  <header class="page-header">
     <a class="page-header__logo" href="index.html">
       <img src="img/logotype-mobile.svg" width="102" height="84" alt="Символ города Седона">
     </a>
@@ -37,9 +37,16 @@
     </nav>
   </header>
 
-  <main class="page-main page__body--container">
-    <h1 class="visually-hidden">Форма обратной связи</h1>
-    <section class="feedback page__body--container">
+  <main class="page-main">
+
+    <section class="welcome-block welcome-block--short">
+      <h1 class="visually-hidden">Добро пожаловать в Седону! Этот городок стоит посетить!</h1>
+      <img class="welcome-block__title welcome-block__title--short" src="../img/Photo/Main-slogan-index-mobile.svg" width="282" height="214"
+        alt="Надпись Седона">
+    </section>
+
+
+    <section class="feedback">
       <header class="feedback__header">
         <h2 class="feedback__title">Оставьте свой отзыв</h2>
         <p class="feedback__intro">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
@@ -52,23 +59,29 @@
           <legend class="personal__legend">Представьтесь:</legend>
           <ul class="personal__list">
             <li class="personal__item">
-              <label class="personal__item-label">
-                Имя:
-                <input class="personal__data" type="text" name="name" id="name-slot" placeholder="Петр">
-              </label>
+              <nobr>
+                <label class="personal__item-label">
+                  Имя:
+                  <input class="personal__data" type="text" name="name" id="name-slot" placeholder="Петр">
+                </label>
+              </nobr>
             </li>
             <li class="personal__item">
-              <label class="personal__item-label">
-                Фамилия:
-                <input class="personal__data" type="text" name="surname" id="surname-slot" placeholder="Иванов">
-              </label>
+              <nobr>
+                <label class="personal__item-label">
+                  Фамилия:
+                  <input class="personal__data" type="text" name="surname" id="surname-slot" placeholder="Иванов">
+                </label>
+              </nobr>
             </li>
             <li class="personal__item">
-              <label class="personal__item-label">
-                Отчество:
-                <input class="personal__data" type="text" name="patronimyc" id="patronymic-slot"
-                  placeholder="Александрович">
-              </label>
+              <nobr>
+                <label class="personal__item-label">
+                  Отчество:
+                  <input class="personal__data" type="text" name="patronimyc" id="patronymic-slot"
+                    placeholder="Александрович">
+                </label>
+              </nobr>
             </li>
           </ul>
         </fieldset>
