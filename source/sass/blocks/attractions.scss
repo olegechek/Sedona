@@ -2,14 +2,23 @@
   border: none;
   padding: 0;
   margin: 0;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .attractions__legend {
+  display: block;
+  box-sizing: border-box;
   font-style: bold;
   color: $black;
+  text-align: center;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  padding: 0;
+  margin: 0;
+  padding-top: 14px;
+  padding-bottom: 37px;
 }
 
 .attractions__list {
@@ -19,7 +28,13 @@
   margin: 0;
 }
 
+.attractions__item {
+  margin-bottom: 54px;
+}
+
 .attractions__item-label {
+  display: flex;
+  align-items: baseline;
   text-transform: none;
   color: $black;
   font-style: bold;
@@ -27,3 +42,73 @@
   font-size: 18px;
   line-height: 26px;
 }
+
+.attractions__checkbox {
+  order: -1;
+  margin-left: 21px;
+  margin-right: 44px;
+}
+
+
+/********* T A B L E T     T U N E S **********************/
+
+@media (min-width: $tablet-width) {
+  .attractions {
+    width: auto;
+    }
+  .attractions__legend {
+    font-size: 21px;
+    width: 400px;
+    padding-top: 27px;
+    padding-right: 3px;
+    padding-bottom: 59px;
+  }
+
+  .attractions__list{
+    min-width: 648px;
+    max-width: 970px;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .attractions__item {
+    width: 324px;
+    padding-bottom: 8px;
+  }
+
+  .attractions__item:nth-child(2n+1) {
+    padding-left: 95px;
+   }
+
+   .attractions__item:nth-child(2n) {
+    padding-left: 32px;
+   }
+}
+
+
+/********* D E S K T O P    T U N E S **********************/
+
+@media (min-width: $desktop-width) {
+
+  .attractions__list{
+    width: 960px;
+    padding-right: 3px;
+    padding-bottom: 61px;
+    justify-content: space-between;
+  }
+
+
+  .attractions__item {
+    width: auto;
+    padding: 0;
+    margin: 0;
+  }
+
+  .attractions__item:nth-child(n) {
+    padding: 0;
+}
+
+}
+

@@ -1,0 +1,27 @@
+.page {
+  height: 100%;
+  min-width: 320px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: $grey-text;
+  background-color: $grey;
+  text-transform: uppercase;
+}
+
+.page__body {
+  max-width: 1200px;
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+
+}
+
+.page__body--container {
+  margin-left: auto;
+  margin-right: auto;
+}

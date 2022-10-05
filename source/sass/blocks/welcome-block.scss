@@ -54,11 +54,35 @@
                       1200px 518px;
   }
 
+  .welcome-block--short {
+    height: 290px;
+  }
 
   .welcome-block__title {
     width: 460px;
     height: 350px;
     left: calc(50% - 230px);
     top: calc(50% - 180px);
+  }
+
+  .welcome-block__title--short {
+    content: url("../../img/Photo/Main-slogan-noindex-tab.svg");
+    width: 456px;
+    height: 78px;
+    left: calc(50% - 228px);
+    top: calc(50% - 50px);
+  }
+}
+
+
+/********* D E S K T O P    T U N E S **********************/
+
+@media (min-width: $desktop-width) {
+  .welcome-block--short {
+    height: 301px;
+  }
+
+  .welcome-block__title--short {
+    left: calc(50% - 230px);
   }
 }

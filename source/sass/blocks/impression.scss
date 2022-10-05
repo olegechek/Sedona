@@ -2,14 +2,23 @@
   border: none;
   padding: 0;
   margin: 0;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .impression__legend {
+  display: block;
+  box-sizing: border-box;
   font-style: bold;
   color: $black;
+  text-align: center;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  padding: 0;
+  margin: 0;
+  padding-top: 35px;
+  padding-bottom: 37px;
 }
 
 .impression__list {
@@ -19,7 +28,13 @@
   margin: 0;
 }
 
+.impression__item {
+  margin-bottom: 43px;
+}
+
 .impression__item-label {
+  display: flex;
+  align-items: baseline;
   text-transform: none;
   color: $black;
   font-style: bold;
@@ -27,3 +42,48 @@
   font-size: 18px;
   line-height: 26px;
 }
+
+.impression__radio {
+  order: -1;
+  margin-left: 21px;
+  margin-right: 44px;
+}
+
+/********* T A B L E T     T U N E S **********************/
+
+@media (min-width: $tablet-width) {
+
+  .impression {
+    width: 324px;
+  }
+
+  .impression__legend {
+    text-align: left;
+    font-size: 21px;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 73px;
+  }
+
+  .impression__item {
+    margin-bottom: 52px;
+  }
+
+  .impression__radio {
+    margin-right: 40px;
+  }
+}
+
+/********* D E S K T O P    T U N E S **********************/
+
+@media (min-width: $desktop-width) {
+  .impression {
+    width: 480px;
+    padding-left: 5px;
+  }
+
+  .impression__legend {
+    padding-left: 74px;
+  }
+}
+

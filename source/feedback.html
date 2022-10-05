@@ -41,8 +41,8 @@
 
     <section class="welcome-block welcome-block--short">
       <h1 class="visually-hidden">Добро пожаловать в Седону! Этот городок стоит посетить!</h1>
-      <img class="welcome-block__title welcome-block__title--short" src="../img/Photo/Main-slogan-index-mobile.svg" width="282" height="214"
-        alt="Надпись Седона">
+      <img class="welcome-block__title welcome-block__title--short" src="../img/Photo/Main-slogan-index-mobile.svg"
+        width="282" height="214" alt="Надпись Седона">
     </section>
 
 
@@ -59,29 +59,23 @@
           <legend class="personal__legend">Представьтесь:</legend>
           <ul class="personal__list">
             <li class="personal__item">
-              <nobr>
-                <label class="personal__item-label">
-                  Имя:
-                  <input class="personal__data" type="text" name="name" id="name-slot" placeholder="Петр">
-                </label>
-              </nobr>
+              <label class="personal__item-label">
+                Имя<span>*</span>:
+                <input class="personal__data" type="text" name="name" id="name-slot" placeholder="Петр">
+              </label>
             </li>
             <li class="personal__item">
-              <nobr>
-                <label class="personal__item-label">
-                  Фамилия:
-                  <input class="personal__data" type="text" name="surname" id="surname-slot" placeholder="Иванов">
-                </label>
-              </nobr>
+              <label class="personal__item-label">
+                Фамилия<span>*</span>:
+                <input class="personal__data" type="text" name="surname" id="surname-slot" placeholder="Иванов">
+              </label>
             </li>
             <li class="personal__item">
-              <nobr>
-                <label class="personal__item-label">
-                  Отчество:
-                  <input class="personal__data" type="text" name="patronimyc" id="patronymic-slot"
-                    placeholder="Александрович">
-                </label>
-              </nobr>
+              <label class="personal__item-label">
+                Отчество:<span>&nbsp;</span>
+                <input class="personal__data" type="text" name="patronimyc" id="patronymic-slot"
+                  placeholder="Александрович">
+              </label>
             </li>
           </ul>
         </fieldset>
@@ -91,13 +85,13 @@
           <ul class="contact__list">
             <li class="contact__item">
               <label class="contact__item-label">
-                Контактный телефон:
+                Контактный&nbsp;телефон*:
                 <input class="contact__data" type="tel" name="tel" id="tel-slot" placeholder="Введите телефон">
               </label>
             </li>
             <li class="contact__item">
               <label class="contact__item-label">
-                Электронная почта:
+                Электронная&nbsp;почта*:
                 <input class="contact__data" type="email" name="email" id="email-slot" placeholder="Введите e-mail">
               </label>
             </li>
@@ -165,7 +159,7 @@
           </label>
         </fieldset>
         <button class="button feedback__button" type="submit">Отправить отзыв</button>
-        <p class="feedback__comment">* - обязательные поля</p>
+        <p class="feedback__comment">* &#8212; обязательные поля</p>
       </form>
     </section>
 
