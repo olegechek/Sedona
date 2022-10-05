@@ -47,6 +47,47 @@
   order: -1;
   margin-left: 21px;
   margin-right: 44px;
+  position: relative;
+}
+
+.attractions__checkbox::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  border-radius: 5%;
+  background-color: $grey-100;
+  position: absolute;
+  top: -21px;
+  left: -20px;
+}
+
+.attractions__item-label:hover .attractions__checkbox::before {
+  background-color: $grey-disabled;
+}
+
+.attractions__item-label:active .attractions__checkbox::before {
+  background-color: $grey-active;
+}
+
+
+.attractions__checkbox:checked:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 23px;
+  height: 16px;
+  background-image: url("../../img/Icons/tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: -3px;
+  left: -4px;
+}
+
+.attractions__item-label:active .attractions__checkbox:checked:after {
+  opacity: 0.3;
 }
 
 

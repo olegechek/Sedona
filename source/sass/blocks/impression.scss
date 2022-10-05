@@ -33,6 +33,7 @@
 }
 
 .impression__item-label {
+  position: relative;
   display: flex;
   align-items: baseline;
   text-transform: none;
@@ -43,11 +44,58 @@
   line-height: 26px;
 }
 
+
 .impression__radio {
   order: -1;
   margin-left: 21px;
   margin-right: 44px;
+  opacity: 1;
+  position: relative;
+
 }
+
+.impression__radio::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: $grey-100;
+  position: absolute;
+  top: -21px;
+  left: -20px;
+}
+
+.impression__item-label:hover .impression__radio::before {
+  background-color: $grey-disabled;
+}
+
+.impression__item-label:active .impression__radio::before {
+  background-color: $grey-active;
+}
+
+
+.impression__radio:checked:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background-color: $grey-text;
+  position: absolute;
+  top: -4px;
+  left: -3px;
+}
+
+.impression__item-label:active .impression__radio:checked:after {
+  opacity: 0.3;
+}
+
+
+
+
 
 /********* T A B L E T     T U N E S **********************/
 

@@ -25,6 +25,33 @@
   padding: 0;
   margin: 0;
   padding-bottom: 12px;
+  position: relative;
+  &:first-child:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: $grey-200;
+    background-image: url("../../img/Icons/phone.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 33px;
+    right: 0px;
+  }
+  &:last-child:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: $grey-200;
+    background-image: url("../../img/Icons/mail.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 33px;
+    right: 0px;
+  }
 }
 
 .contact__item-label {
@@ -56,6 +83,10 @@
 }
 
 
+/********* T A B L E T     T U N E S **********************/
+
+
+
 @media (min-width: $tablet-width) {
   .contact__legend {
     font-size: 21px;
@@ -71,6 +102,15 @@
 /********* D E S K T O P    T U N E S **********************/
 
 @media (min-width: $desktop-width) {
+
+  .contact__item:first-child:after {
+    top: 7px;
+    right: 81px;
+  }
+  .contact__item:last-child:after {
+    top: 7px;
+    right: 0px;
+  }
 
   .contact__legend {
     padding-bottom: 62px;

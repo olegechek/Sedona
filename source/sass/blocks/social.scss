@@ -18,12 +18,25 @@
   height: 48px;
   background-color: $blue;
   margin-bottom: 2px;
+
+  &:hover {
+    background-color: $blue-hover;
+  }
+
+  &:active {
+    background-color: $blue-down;
+  }
 }
 
 .social__link--twitter {
   background-image: url("../../img/Icons/icon-twitter.svg");
   background-repeat: no-repeat;
   background-position: center;
+  &:active {
+    background-image: opacity(0.3);
+    //background-image: linear-gradient(rgba($white, 0.3), rgba($white, 0.3));
+    //opacity: 0.3;
+  }
 }
 
 
@@ -31,10 +44,16 @@
   background-image: url("../../img/Icons/icon-facebook.svg");
   background-repeat: no-repeat;
   background-position: center;
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .social__link--youtube {
   background-image: url("../../img/Icons/icon-youtube.svg");
   background-repeat: no-repeat;
   background-position: center;
+  &:active {
+    opacity: 0.3;
+  }
 }

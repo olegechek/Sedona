@@ -20,6 +20,14 @@
   background-color: $blue;
   border-bottom: 1px;
   padding-top: 10px;
+
+  &:hover {
+    background-color: $blue-hover;
+  }
+
+  &:active {
+    background-color: $blue-down;
+  }
 }
 
 
@@ -37,6 +45,10 @@
   display: block;
   color: $white;
   text-align: center;
+
+  &:active {
+    color: rgba($white, 0.3);
+  }
 }
 
 
@@ -70,15 +82,23 @@
     height: auto;
     padding: 0;
     border-bottom: none;
+
+    &:hover {
+      background-color: $white;
+    }
+
+    &:active {
+      background-color: $white;
+    }
   }
 
-   .site-list__item:nth-child(4n+2) {
+  .site-list__item:nth-child(4n+2) {
     margin-right: 78px;
-   }
+  }
 
-   .site-list__item:nth-child(4n+3) {
+  .site-list__item:nth-child(4n+3) {
     margin-left: 78px;
-   }
+  }
 
 
   .site-list__item:not(:last-child) {
@@ -90,9 +110,34 @@
     border-top: none;
   }
 
+
   .site-list__item-link {
     color: $black;
     text-align: center;
+
+    &:hover {
+      color: $blue;
+    }
+
+    &:active {
+      color: $black;
+      opacity: 0.3;
+    }
+  }
+
+
+  .site-list__item-link--active {
+    color: $brown-active;
+    text-align: center;
+
+    &:hover {
+      color: $brown-hover;
+    }
+
+    &:active {
+      color: $brown-active;
+      opacity: 0.3;
+    }
   }
 
 }
@@ -112,11 +157,11 @@
 
   .site-list__item:nth-child(4n+2) {
     margin-right: 122px;
-   }
+  }
 
-   .site-list__item:nth-child(4n+3) {
+  .site-list__item:nth-child(4n+3) {
     margin-left: 122px;
-   }
+  }
 
 
 }
