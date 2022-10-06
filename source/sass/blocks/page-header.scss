@@ -25,6 +25,12 @@
   background-position: center;
   bottom: 17px;
   right: 20px;
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 
@@ -51,6 +57,12 @@
     background-position: center;
     top: 19px;
     right: 21px;
+    &:hover {
+      opacity: 0.6;
+    }
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .page-header__navigation--mobile-closed {

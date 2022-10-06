@@ -25,5 +25,12 @@
   background-image: url("../img/Icons/htmlacademy-logo.svg");
   background-repeat: no-repeat;
   background-size: auto;
+  &:hover {
+    background-image: url("../img/Icons/htmlacademy-logo-blue.svg");
+  }
+  &:active {
+    background-image: url("../img/Icons/htmlacademy-logo.svg");
+    opacity: 0.3;
+  }
 }
 

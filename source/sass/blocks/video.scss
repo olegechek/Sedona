@@ -1,6 +1,8 @@
 .video {
   background-color: $white;
+  padding: 0;
   margin: 0 auto;
+  padding-bottom: 41px;
 }
 
 
@@ -11,6 +13,9 @@
   font-size: 18px;
   line-height: 26px;
   text-align: center;
+  padding: 0;
+  padding-bottom: 15px;
+  margin: 0;
 }
 
 .video__intro {
@@ -19,15 +24,112 @@
   font-size: 14px;
   line-height: 24px;
   text-align: center;
+  padding: 0 30px;
+  padding-bottom: 19px;
 }
 
-.video__clip {
-  width: 280px;
-  height: 280px;
-  position: relative;
-  left: calc(50% - 140px);
+.video__player {
+  width: 320px;
+  padding: 0;
   margin: 0 auto;
+  position: relative;
 }
+
+.video__clip-image {
+  display: block;
+  width: 320px;
+  height: 200px;
+}
+
+.video__timescale {
+  position: absolute;
+  width: 280px;
+  height: 45px;
+  margin: 0 20px;
+  padding-top: 23px;
+  padding-right: 22px;
+  padding-left: 22px;
+  background-color: rgba($black, 0.6);
+  border-radius: 2px;
+  bottom: 65px;
+}
+
+.video__timescale-bar {
+  height: 3px;
+  background: $white;
+  opacity: 0.2;
+}
+
+.video__timescale-toggle {
+  position: absolute;
+  top: 20px;
+  width: 10px;
+  height: 10px;
+  background-color: $white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.video__control {
+  width: 280px;
+  height: 66px;
+  background-color: $grey-100;
+  padding: 0;
+  padding-top: 1px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.video__control-button {
+  display: block;
+  width: 70px;
+  height: 66px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  background-color: $grey-100;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.button--replay {
+  background-image: url("../../img/Icons/replay-grey.svg");
+  margin-right: auto;
+
+  &:hover {
+    background-image: url("../../img/Icons/replay-grey-hover.svg");
+    padding: 0;
+  }
+}
+
+.button--subs {
+  background-image: url("../../img/Icons/subtitles-grey.svg");
+  background-position: right;
+  margin-right: 3px;
+
+  &:hover {
+    background-image: url("../../img/Icons/subtitles-grey-hover.svg");
+  }
+}
+
+.button--fullscreen {
+  background-image: url("../../img/Icons/fullscreen-grey.svg");
+
+  &:hover {
+    background-image: url("../../img/Icons/fullscreen-grey-hover.svg");
+  }
+}
+
+
+
+
+
+
 
 
 /********* T A B L E T     T U N E S **********************/
