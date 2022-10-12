@@ -91,10 +91,24 @@
   padding: 0;
   margin: 0;
   overflow: hidden;
-  background-image: url("../img/Photo/features-real-town-all.png");
+  background-image: url("../img/Photo/features/features-real-town-mobile.jpg");
   background-repeat: no-repeat;
-  background-size: 800px 260px;
+  background-size: 520px 260px;
   background-position: center bottom;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/Photo/features/features-real-town-mobile@2x.jpg");
+  }
+
+  @media (min-width: 520px) {
+    height: 256px;
+    background-image: url("../img/Photo/features/features-real-town-all.jpg");
+    background-size: 800px 256px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/Photo/features/features-real-town-all@2x.jpg");
+    }
+  }
 }
 
 
@@ -104,10 +118,25 @@
   padding: 0;
   margin: 0;
   overflow: hidden;
-  background-image: url("../img/Photo/features-devil-bridge-desktop.png");
+  background-image: url("../img/Photo/features/features-devil-bridge-mobile.jpg");
   background-repeat: no-repeat;
-  background-size: 800px 260px;
+  background-size: 520px 260px;
   background-position: center bottom;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/Photo/features/features-devil-bridge-mobile@2x.jpg");
+  }
+
+  @media (min-width: 520px) {
+    height: 256px;
+    background-image: url("../img/Photo/features/features-devil-bridge-all.jpg");
+    background-size: 800px 256px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/Photo/features/features-devil-bridge-all@2x.jpg");
+    }
+  }
+
 }
 
 
@@ -205,25 +234,42 @@
 
   .features__item--alternative-img-block1 {
     grid-column: span 2;
-    height: 256px;
-    width: 100%;
-    overflow: hidden;
-    background-image: url("../img/Photo/features-real-town-all.png");
-    background-repeat: no-repeat;
-    background-size: 800px 256px;
-    background-position: center bottom;
+    background-image: url("../img/Photo/features/features-real-town-tablet.jpg");
+    background-size: 512px 256px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/Photo/features/features-real-town-tablet@2x.jpg");
+    }
+
+    @media (min-width: 769px) {
+      background-image: url("../img/Photo/features/features-real-town-all.jpg");
+      background-size: 800px 256px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/Photo/features/features-real-town-all@2x.jpg");
+      }
+    }
   }
 
   .features__item--alternative-img-block2 {
     grid-column: span 2;
-    height: 256px;
-    width: 100%;
-    overflow: hidden;
-    background-image: url("../img/Photo/features-devil-bridge-desktop.png");
-    background-repeat: no-repeat;
-    background-size: 800px 256px;
-    background-position: center bottom;
+    background-image: url("../img/Photo/features/features-devil-bridge-tablet.jpg");
+    background-size: 512px 256px;
     order: -1;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/Photo/features/features-devil-bridge-tablet@2x.jpg");
+    }
+
+    @media (min-width: 769px) {
+      height: 256px;
+      background-image: url("../img/Photo/features/features-devil-bridge-all.jpg");
+      background-size: 800px 256px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/Photo/features/features-devil-bridge-all@2x.jpg");
+      }
+    }
   }
 
   .features__headline {

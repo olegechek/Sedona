@@ -5,26 +5,23 @@
   overflow: hidden;
   background-color: $white;
   background-image: url("../img/Decorations/page-header-triangle.svg"),
-                    url("../img/Photo/back-picture.png");
+                    url("../img/Photo/welcome/back-mobile.jpg");
   background-repeat: no-repeat,
                      no-repeat;
   background-size: 1200px 57px,
                    901px 390px;
   background-position: center bottom,
                        center bottom;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/Decorations/page-header-triangle.svg"),
+                      url("../img/Photo/welcome/back-mobile@2x.jpg");
+    }
 }
 
 
 .welcome-block--short {
   height: 158px;
-  background-image: url("../img/Decorations/page-header-triangle.svg"),
-                    url("../../img/Photo/back-mobile.jpg");
-  background-repeat: no-repeat,
-                     no-repeat;
-  background-size: 1200px 57px,
-                   902px 392px;
-  background-position: center bottom,
-                       center bottom;
 }
 
 .welcome-block__title {

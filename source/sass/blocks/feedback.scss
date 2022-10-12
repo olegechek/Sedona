@@ -4,7 +4,7 @@
   margin: 0;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 39px;
+  padding-bottom: 40px;
   text-align: center;
 }
 
@@ -37,6 +37,22 @@
   font-size: 14px;
   line-height: 26px;
   margin: 0 auto;
+  position: relative;
+}
+
+.feedback__item {
+  position: relative;
+}
+
+.feedback__item:nth-of-type(n) legend::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: calc(100% + 40px);
+  height: 1px;
+  background-color: $grey-disabled;
+  top: 0px;
+  left: -20px;
 }
 
 
@@ -87,21 +103,62 @@
   }
 
 
-  .feedback__form-contact {
+  .feedback__item:nth-of-type(2) {
     grid-column: span 2;
   }
 
-  .feedback__form-impression {
+  .feedback__item:nth-of-type(3) {
     order: -1;
   }
 
-  .feedback__form-attractions {
+  .feedback__item:nth-of-type(4) {
     grid-column: span 2;
   }
 
-  .feedback__form-review {
+  .feedback__item:nth-of-type(5) {
     grid-column: span 2;
   }
+
+
+  .feedback__item:nth-of-type(n+2) legend::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 19%;
+    height: 1px;
+    background-color: $grey-disabled;
+    top: 31px;
+    left: 0px;
+  }
+
+  .feedback__item:nth-of-type(n+2) legend::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 19%;
+    height: 1px;
+    background-color: $grey-disabled;
+    top: 31px;
+    right: 0px;
+  }
+
+
+  .feedback__item:nth-of-type(3) legend::before,
+  .feedback__item:nth-of-type(3) legend::after {
+    display: none;
+  }
+
+  .feedback__item:nth-of-type(1) legend::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 292px;
+    background-color: $grey-disabled;
+    top: 2px;
+    left: -1px;
+  }
+
 
   .feedback__button {
     width: 322px;
@@ -140,6 +197,11 @@
   .feedback__button {
     width: 480px;
     padding-right: 35px;
+  }
+
+  .feedback__item:nth-of-type(n+2) legend::before,
+  .feedback__item:nth-of-type(n+2) legend::after {
+    width: 280px;
   }
 
 }

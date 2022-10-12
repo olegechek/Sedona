@@ -5,13 +5,21 @@
   <meta charset="utf-8">
   <link href="css/style.css" rel="stylesheet">
   <title>Sedona</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <meta name="viewport" content="width=device-width, initial-scale-1">
 </head>
 
 <body class="page__body">
   <header class="page-header">
     <a class="page-header__logo" href="index.html">
-      <img src="img/logotype-mobile.svg" width="102" height="84" alt="Символ города Седона">
+      <picture>
+        <source media="(min-width: 1200px)" width="186" height="96" srcset="img/logotype-desktop.svg">
+        <source media="(min-width: 768px)" width="102" height="84" srcset="img/logotype-tablet.svg">
+        <img src="img/logotype-mobile.svg" width="102" height="84" alt="Символ города Седона">
+      </picture>
     </a>
     <button class="page-header__button" type="button">
       <span class="visually-hidden">Открыть меню</span>
@@ -55,7 +63,7 @@
 
       <form class="feedback__form" method="get" action="https://echo.htmlacademy.ru">
 
-        <fieldset class="feedback__form-personal personal">
+        <fieldset class="feedback__item personal">
           <legend class="personal__legend">Представьтесь:</legend>
           <ul class="personal__list">
             <li class="personal__item">
@@ -80,7 +88,7 @@
           </ul>
         </fieldset>
 
-        <fieldset class="feedback__form-contact contact">
+        <fieldset class="feedback__item contact">
           <legend class="contact__legend">Контактная информация:</legend>
           <ul class="contact__list">
             <li class="contact__item">
@@ -98,7 +106,7 @@
           </ul>
         </fieldset>
 
-        <fieldset class="feedback__form-impression impression">
+        <fieldset class="feedback__item impression">
           <legend class="impression__legend">Ваше общее впечатление:</legend>
           <ul class="impression__list">
             <li class="impression__item">
@@ -122,7 +130,7 @@
           </ul>
         </fieldset>
 
-        <fieldset class="feedback__form-attractions attractions">
+        <fieldset class="feedback__item attractions">
           <legend class="attractions__legend">Посещенные достопримечательности:</legend>
           <ul class="attractions__list">
             <li class="attractions__item">
@@ -151,7 +159,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="feedback__form-review review">
+        <fieldset class="feedback__item review">
           <legend class="review__legend">Опишите свои эмоции:</legend>
           <label class="review__label">
             <textarea class="review__textarea" name="review-form" id="review-form"

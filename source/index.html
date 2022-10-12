@@ -5,13 +5,21 @@
   <meta charset="utf-8">
   <link href="css/style.css" rel="stylesheet">
   <title>Sedona</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <meta name="viewport" content="width=device-width, initial-scale-1">
 </head>
 
 <body class="page__body">
   <header class="page-header">
     <a class="page-header__logo" href="index.html">
-      <img src="img/logotype-mobile.svg" width="102" height="84" alt="Символ города Седона">
+      <picture>
+        <source media="(min-width: 1200px)" width="186" height="96" srcset="img/logotype-desktop.svg">
+        <source media="(min-width: 768px)" width="102" height="84" srcset="img/logotype-tablet.svg">
+        <img src="img/logotype-mobile.svg" width="102" height="84" alt="Символ города Седона">
+      </picture>
     </a>
     <button class="page-header__button" type="button">
       <span class="visually-hidden">Открыть меню</span>
@@ -41,8 +49,8 @@
 
     <section class="welcome-block">
       <h1 class="visually-hidden">Добро пожаловать в Седону! Этот городок стоит посетить!</h1>
-        <img class="welcome-block__title" src="img/Photo/Main-slogan-index-mobile.svg" width="282" height="214"
-          alt="Надпись Добро пожаловать">
+      <img class="welcome-block__title" src="img/Photo/Main-slogan-index-mobile.svg" width="282" height="214"
+        alt="Надпись Добро пожаловать">
     </section>
 
 
@@ -148,26 +156,26 @@
     </div>
   </footer>
 
-<script>
-var navMain = document.querySelector('.page-header__navigation');
-var openButton = document.querySelector('.page-header__button');
-var closeButton = document.querySelector('.page-header__close-button');
+  <script>
+    var navMain = document.querySelector('.page-header__navigation');
+    var openButton = document.querySelector('.page-header__button');
+    var closeButton = document.querySelector('.page-header__close-button');
 
-navMain.classList.remove('page-header__navigation--no-js');
+    navMain.classList.remove('page-header__navigation--no-js');
 
-openButton.addEventListener('click', function() {
-    if (navMain.classList.contains('page-header__navigation--mobile-closed')) {
-      navMain.classList.remove('page-header__navigation--mobile-closed');
-    }
-  });
+    openButton.addEventListener('click', function () {
+      if (navMain.classList.contains('page-header__navigation--mobile-closed')) {
+        navMain.classList.remove('page-header__navigation--mobile-closed');
+      }
+    });
 
-  closeButton.addEventListener('click', function() {
-    if  (!navMain.classList.contains('page-header__navigation--mobile-closed')) {
-      navMain.classList.add('page-header__navigation--mobile-closed');
-    }
-  });
+    closeButton.addEventListener('click', function () {
+      if (!navMain.classList.contains('page-header__navigation--mobile-closed')) {
+        navMain.classList.add('page-header__navigation--mobile-closed');
+      }
+    });
 
-</script>
+  </script>
 
 </body>
 

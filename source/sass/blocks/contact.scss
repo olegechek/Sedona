@@ -2,6 +2,7 @@
   border: none;
   padding: 0;
   margin: 0;
+  padding-bottom: 14px;
 }
 
 .contact__legend {
@@ -10,7 +11,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  padding-top: 12px;
+  padding-top: 20px;
   padding-bottom: 16px;
 }
 
@@ -91,12 +92,19 @@
   .contact__legend {
     font-size: 21px;
     padding-right: 5px;
-    padding-top: 34px;
-    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 21px;
   }
   .contact__item {
-    padding-bottom: 23px;
+    padding-bottom: 24px;
   }
+
+  .contact__item:last-of-type {
+    padding-bottom: 30px;
+  }
+
+
+
 }
 
 /********* D E S K T O P    T U N E S **********************/
@@ -119,6 +127,10 @@
   .contact__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .contact__item:last-of-type {
+    padding-bottom: 32px;
   }
 
 

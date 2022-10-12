@@ -27,10 +27,15 @@
   padding-bottom: 18px;
 }
 
+.personal__item:last-of-type {
+  padding-bottom: 10px;
+}
+
 .personal__item-label {
   display: flex;
   align-items: center;
 }
+
 
 .personal__data {
   border: none;

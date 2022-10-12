@@ -89,7 +89,7 @@
     top: 0px;
     left: 50%;
     transform: translateX(-50%);
-    content: url("../img/logotype-tablet.svg");
+//    content: url("../img/logotype-tablet.svg");
   }
 
   .page-header__button {
@@ -106,9 +106,10 @@
 
 
 /********* D E S K T O P    T U N E S **********************/
-
+/*
 @media (min-width: $desktop-width) {
   .page-header__logo {
     content: url("../img/logotype-desktop.svg");
   }
 }
+*/

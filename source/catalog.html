@@ -5,13 +5,21 @@
   <meta charset="utf-8">
   <link href="css/style.css" rel="stylesheet">
   <title>Sedona</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <meta name="viewport" content="width=device-width, initial-scale-1">
 </head>
 
 <body class="page__body">
   <header class="page-header">
     <a class="page-header__logo" href="index.html">
-      <img src="img/logotype-mobile.svg" width="102" height="84" alt="Символ города Седона">
+      <picture>
+        <source media="(min-width: 1200px)" width="186" height="96" srcset="img/logotype-desktop.svg">
+        <source media="(min-width: 768px)" width="102" height="84" srcset="img/logotype-tablet.svg">
+        <img src="img/logotype-mobile.svg" width="102" height="84" alt="Символ города Седона">
+      </picture>
     </a>
     <button class="page-header__button" type="button">
       <span class="visually-hidden">Открыть меню</span>
@@ -59,7 +67,13 @@
             <p class="photo__author">Автор фото: Борис</p>
             <p class="photo__likes">1350</p>
           </div>
-          <img class="photo__image" src="img/Photo/Evening road.jpg" width="1200" height="400" alt="Вечерняя дорога">
+          <div class="photo__image-wrapper">
+            <picture class="photo__image-too">
+              <source media="(min-resolution: 2dppx)" srcset="img/Photo/catalog/evening-road-all@2x.jpg">
+              <img class="photo__image" src="img/Photo/catalog/evening-road-all.jpg" width="1200" height="400"
+                alt="Вечерняя дорога">
+            </picture>
+          </div>
         </li>
         <li class="photo__item">
           <div class="photo__info">
@@ -67,15 +81,27 @@
             <p class="photo__author">Автор фото: Сергей</p>
             <p class="photo__likes">143</p>
           </div>
-          <img class="photo__image" src="img/Photo/Local-fauna.png" width="400" height="267" alt="Местный кактус">
+          <div class="photo__image-wrapper">
+            <picture class="photo__image-too">
+              <source media="(min-resolution: 2dppx)" srcset="img/Photo/catalog/local-fauna-all@2x.jpg">
+              <img class="photo__image" src="img/Photo/catalog/local-fauna-all.jpg" width="400" height="267"
+                alt="Местный кактус">
+            </picture>
+          </div>
         </li>
         <li class="photo__item">
           <div class="photo__info">
             <p class="photo__name">Дорога на север</p>
             <p class="photo__author">Автор фото: Петр</p>
-            <p class="photo__likes">96</p>
+            <p class="photo__likes">96&nbsp;</p>
           </div>
-          <img class="photo__image" src="img/Photo/photo-3-mobile.png" width="400" height="267" alt="Дорога через лес">
+          <div class="photo__image-wrapper">
+            <picture class="photo__image-too">
+              <source media="(min-resolution: 2dppx)" srcset="img/Photo/catalog/forest-road-all@2x.jpg">
+              <img class="photo__image" src="img/Photo/catalog/forest-road-all.jpg" width="400" height="267"
+                alt="Дорога через лес">
+            </picture>
+          </div>
         </li>
         <li class="photo__item">
           <div class="photo__info">
@@ -83,7 +109,13 @@
             <p class="photo__author">Автор фото: Антон</p>
             <p class="photo__likes">254</p>
           </div>
-          <img class="photo__image" src="img/Photo/photo-4-desktop 1.png" width="400" height="267" alt="Скалистая арка">
+          <div class="photo__image-wrapper">
+            <picture class="photo__image-too">
+              <source media="(min-resolution: 2dppx)" srcset="img/Photo/catalog/devils-bridge-all@2x.jpg">
+              <img class="photo__image" src="img/Photo/catalog/devils-bridge-all.jpg" width="400" height="267"
+                alt="Скалистая арка">
+            </picture>
+          </div>
         </li>
       </ul>
     </section>
@@ -94,20 +126,23 @@
         </p>
       </header>
       <div class="video__player">
-        <img class="video__clip-image" src="img/Photo/video-mobile.jpg" width="320" height="200"
-          alt="Путешествие по Седоне">
-
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/Photo/catalog/video-desktop.jpg 1x, img/Photo/catalog/video-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/Photo/catalog/video-tablet.jpg 1x, img/Photo/catalog/video-tablet@2x.jpg 2x">
+          <img class="video__clip-image" src="img/Photo/catalog/video-mobile.jpg" srcset="img/Photo/catalog/video-mobile@2x.jpg 2x"
+            alt="Путешествие по Седоне">
+        </picture>
         <div class="video__timescale">
           <div class="video__timescale-bar"></div>
           <div class="video__timescale-toggle" tabindex="0" style="left: 20%"></div>
         </div>
-
         <div class="video__control">
-          <button class="video__control-button button--replay"><span class="visually-hidden">Смотреть заново</span></button>
+          <button class="video__control-button button--replay"><span class="visually-hidden">Смотреть
+              заново</span></button>
           <button class="video__control-button button--subs"><span class="visually-hidden">Субтитры</span></button>
-          <button class="video__control-button button--fullscreen"><span class="visually-hidden">Полный экран</span></button>
+          <button class="video__control-button button--fullscreen"><span class="visually-hidden">Полный
+              экран</span></button>
         </div>
-
       </div>
     </section>
   </main>
