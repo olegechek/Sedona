@@ -88,50 +88,44 @@
   padding: 0;
   margin: 0;
   background-color: $grey-100;
-  background-repeat: no-repeat;
-  background-position: center;
   cursor: pointer;
+  color: $grey-300;
 
+  &:hover {
+    color: $grey-text;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .button--replay {
-  background-image: url("../../img/Icons/replay-grey.svg");
   margin-right: auto;
+}
 
-  &:hover {
-    background-image: url("../../img/Icons/replay-grey-hover.svg");
-    padding: 0;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
+.button--replay svg {
+  display: block;
+  margin: 0;
+  padding: 0;
+  margin: auto auto;
 }
 
 .button--subs {
-  background-image: url("../../img/Icons/subtitles-grey.svg");
-  background-position: right;
   margin-right: 3px;
-
-  &:hover {
-    background-image: url("../../img/Icons/subtitles-grey-hover.svg");
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
 }
 
-.button--fullscreen {
-  background-image: url("../../img/Icons/fullscreen-grey.svg");
+.button--subs svg {
+  display: block;
+  padding: 0;
+  margin: auto 0 auto auto;
+}
 
-  &:hover {
-    background-image: url("../../img/Icons/fullscreen-grey-hover.svg");
-  }
 
-  &:active {
-    opacity: 0.3;
-  }
+.button--fullscreen svg {
+  margin: 0;
+  padding: 0;
+  margin: auto auto;
 }
 
 
@@ -165,7 +159,6 @@
     display: block;
     width: 648px;
     height: 500px;
-    //content: url("../../img/Photo/video-tablet.png");
   }
 
   .video__timescale {
@@ -197,13 +190,10 @@
 
   .video__control-button {
     background-color: transparent;
-  }
-
-  .button--replay {
-    background-image: url("../../img/Icons/replay-white.svg");
+    color: $white;
 
     &:hover {
-      background-image: url("../../img/Icons/replay-white.svg");
+      color: $white;
       opacity: 0.6;
     }
 
@@ -213,31 +203,7 @@
   }
 
   .button--subs {
-    background-image: url("../../img/Icons/subtitles-white.svg");
     margin-right: 6px;
-
-    &:hover {
-      background-image: url("../../img/Icons/subtitles-white.svg");
-      opacity: 0.6;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
-
-  }
-
-  .button--fullscreen {
-    background-image: url("../../img/Icons/fullscreen-white.svg");
-
-    &:hover {
-      background-image: url("../../img/Icons/fullscreen-white.svg");
-      opacity: 0.6;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
   }
 }
 
@@ -261,7 +227,6 @@
 
   .video__clip-image {
     width: 800px;
-    //content: url("../../img/Photo/video-desktop.jpg");
   }
 
   .video__timescale {
@@ -275,4 +240,3 @@
 
 
 }
-

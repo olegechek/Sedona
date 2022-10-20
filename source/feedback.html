@@ -48,7 +48,7 @@
   <main class="page-main">
 
     <section class="welcome-block welcome-block--short">
-      <h1 class="visually-hidden">Добро пожаловать в Седону! Этот городок стоит посетить!</h1>
+      <h1 class="visually-hidden">Добро пожаловать в Седону! Этот городок стоит посетить! </h1>
       <img class="welcome-block__title welcome-block__title--short" src="../img/Photo/Main-slogan-index-mobile.svg"
         width="282" height="214" alt="Надпись Седона">
     </section>
@@ -68,19 +68,19 @@
           <ul class="personal__list">
             <li class="personal__item">
               <label class="personal__item-label">
-                Имя<span>*</span>:
+                Имя*:
                 <input class="personal__data" type="text" name="name" id="name-slot" placeholder="Петр">
               </label>
             </li>
             <li class="personal__item">
               <label class="personal__item-label">
-                Фамилия<span>*</span>:
+                Фамилия*:
                 <input class="personal__data" type="text" name="surname" id="surname-slot" placeholder="Иванов">
               </label>
             </li>
             <li class="personal__item">
               <label class="personal__item-label">
-                Отчество:<span>&nbsp;</span>
+                Отчество:&nbsp;
                 <input class="personal__data" type="text" name="patronimyc" id="patronymic-slot"
                   placeholder="Александрович">
               </label>
@@ -193,31 +193,36 @@
     </div>
     <div class="page-footer__copyright copyright">
       <p class="copyright__text">Разработано</p>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="visually-hidden">HTML Academy</span>
+        <svg width="27" height="35">
+          <use xlink:href="img/Icons/svg-sprite.svg#html-logo"></use>
+        </svg>
+      </a>
     </div>
   </footer>
 
-  <script>
-    var navMain = document.querySelector('.page-header__navigation');
-    var openButton = document.querySelector('.page-header__button');
-    var closeButton = document.querySelector('.page-header__close-button');
+  <div class="failure-box--wrapper cutout">
+    <div class="failure-box">
+      <p class="failure-box__title">Что-то пошло не так!</p>
+      <p class="failure-box__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить.</p>
+      <button class="button failure-box__button" type="button">ок</button>
+    </div>
+  </div>
 
-    navMain.classList.remove('page-header__navigation--no-js');
-
-    openButton.addEventListener('click', function () {
-      if (navMain.classList.contains('page-header__navigation--mobile-closed')) {
-        navMain.classList.remove('page-header__navigation--mobile-closed');
-      }
-    });
-
-    closeButton.addEventListener('click', function () {
-      if (!navMain.classList.contains('page-header__navigation--mobile-closed')) {
-        navMain.classList.add('page-header__navigation--mobile-closed');
-      }
-    });
-
-  </script>
-
+  <div class="success-box--wrapper cutout">
+    <div class="success-box">
+      <p class="success-box__title">Ваш отзыв отправлен!</p>
+      <p class="success-box__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. <nobr>В ближайшее</nobr> время
+        мы опубликуем
+        его на сайте.</p>
+      <div class="success-box__button--wrapper">
+        <button class="button success-box__button" type="button">Закрыть окно</button>
+      </div>
+    </div>
+  </div>
+  <script src="js/mobile-nav.js"></script>
+  <script src="js/feedback-form.js"></script>
 </body>
 
 </html>

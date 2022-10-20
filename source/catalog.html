@@ -69,6 +69,8 @@
           </div>
           <div class="photo__image-wrapper">
             <picture class="photo__image-too">
+              <source type="image/webp"
+                srcset="img/Photo/catalog/evening-road-all.webp 1x, img/Photo/catalog/evening-road-all@2x.webp 2x">
               <source media="(min-resolution: 2dppx)" srcset="img/Photo/catalog/evening-road-all@2x.jpg">
               <img class="photo__image" src="img/Photo/catalog/evening-road-all.jpg" width="1200" height="400"
                 alt="Вечерняя дорога">
@@ -83,10 +85,15 @@
           </div>
           <div class="photo__image-wrapper">
             <picture class="photo__image-too">
+              <source type="image/webp"
+                srcset="img/Photo/catalog/local-fauna-all.webp 1x, img/Photo/catalog/local-fauna-all@2x.webp 2x">
               <source media="(min-resolution: 2dppx)" srcset="img/Photo/catalog/local-fauna-all@2x.jpg">
               <img class="photo__image" src="img/Photo/catalog/local-fauna-all.jpg" width="400" height="267"
                 alt="Местный кактус">
             </picture>
+
+
+
           </div>
         </li>
         <li class="photo__item">
@@ -97,6 +104,8 @@
           </div>
           <div class="photo__image-wrapper">
             <picture class="photo__image-too">
+              <source type="image/webp"
+                srcset="img/Photo/catalog/forest-road-all.webp 1x, img/Photo/catalog/forest-road-all@2x.webp 2x">
               <source media="(min-resolution: 2dppx)" srcset="img/Photo/catalog/forest-road-all@2x.jpg">
               <img class="photo__image" src="img/Photo/catalog/forest-road-all.jpg" width="400" height="267"
                 alt="Дорога через лес">
@@ -111,6 +120,8 @@
           </div>
           <div class="photo__image-wrapper">
             <picture class="photo__image-too">
+              <source type="image/webp"
+                srcset="img/Photo/catalog/devils-bridge-all.webp 1x, img/Photo/catalog/devils-bridge-all@2x.webp 2x">
               <source media="(min-resolution: 2dppx)" srcset="img/Photo/catalog/devils-bridge-all@2x.jpg">
               <img class="photo__image" src="img/Photo/catalog/devils-bridge-all.jpg" width="400" height="267"
                 alt="Скалистая арка">
@@ -127,21 +138,36 @@
       </header>
       <div class="video__player">
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/Photo/catalog/video-desktop.jpg 1x, img/Photo/catalog/video-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/Photo/catalog/video-tablet.jpg 1x, img/Photo/catalog/video-tablet@2x.jpg 2x">
-          <img class="video__clip-image" src="img/Photo/catalog/video-mobile.jpg" srcset="img/Photo/catalog/video-mobile@2x.jpg 2x"
-            alt="Путешествие по Седоне">
+          <source media="(min-width: 1200px)"
+            srcset="img/Photo/catalog/video-desktop.jpg 1x, img/Photo/catalog/video-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)"
+            srcset="img/Photo/catalog/video-tablet.jpg 1x, img/Photo/catalog/video-tablet@2x.jpg 2x">
+          <img class="video__clip-image" src="img/Photo/catalog/video-mobile.jpg"
+            srcset="img/Photo/catalog/video-mobile@2x.jpg 2x" alt="Путешествие по Седоне">
         </picture>
         <div class="video__timescale">
           <div class="video__timescale-bar"></div>
           <div class="video__timescale-toggle" tabindex="0" style="left: 20%"></div>
         </div>
         <div class="video__control">
-          <button class="video__control-button button--replay"><span class="visually-hidden">Смотреть
-              заново</span></button>
-          <button class="video__control-button button--subs"><span class="visually-hidden">Субтитры</span></button>
-          <button class="video__control-button button--fullscreen"><span class="visually-hidden">Полный
-              экран</span></button>
+          <button class="video__control-button button--replay">
+            <span class="visually-hidden">Смотреть заново</span>
+            <svg width="16" height="20">
+              <use xlink:href="img/Icons/svg-sprite.svg#replay"></use>
+            </svg>
+          </button>
+          <button class="video__control-button button--subs">
+            <span class="visually-hidden">Субтитры</span>
+            <svg width="32" height="20">
+              <use xlink:href="img/Icons/svg-sprite.svg#subtitles"></use>
+            </svg>
+          </button>
+          <button class="video__control-button button--fullscreen">
+            <span class="visually-hidden">Полный экран</span>
+            <svg width="20" height="20">
+              <use xlink:href="img/Icons/svg-sprite.svg#fullscreen"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </section>
@@ -167,30 +193,17 @@
     </div>
     <div class="page-footer__copyright copyright">
       <p class="copyright__text">Разработано</p>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="visually-hidden">HTML Academy</span>
+        <svg width="27" height="35">
+          <use xlink:href="img/Icons/svg-sprite.svg#html-logo"></use>
+        </svg>
+      </a>
     </div>
   </footer>
 
-  <script>
-    var navMain = document.querySelector('.page-header__navigation');
-    var openButton = document.querySelector('.page-header__button');
-    var closeButton = document.querySelector('.page-header__close-button');
+  <script src="js/mobile-nav.js"></script>
 
-    navMain.classList.remove('page-header__navigation--no-js');
-
-    openButton.addEventListener('click', function () {
-      if (navMain.classList.contains('page-header__navigation--mobile-closed')) {
-        navMain.classList.remove('page-header__navigation--mobile-closed');
-      }
-    });
-
-    closeButton.addEventListener('click', function () {
-      if (!navMain.classList.contains('page-header__navigation--mobile-closed')) {
-        navMain.classList.add('page-header__navigation--mobile-closed');
-      }
-    });
-
-  </script>
 </body>
 
 </html>

@@ -1,10 +1,14 @@
 .copyright {
   background-color: $white;
   display: flex;
-  justify-content: center;
+  justify-content:space-between;
+  width: 148px;
+  margin: 0 auto;
 }
 
 .copyright__text {
+  display: block;
+  height: 35px;
   font-style: normal;
   font-size: 14px;
   line-height: 26px;
@@ -14,23 +18,18 @@
 
 .copyright__link {
   display: block;
-  font-size: 0;
-  line-height: 0;
-  width: 37px;
-  height: 34px;
-  padding-top: 20px;
-  margin-left: 10px;
-  margin-top: 10px;
-  background-color: $white;
-  background-image: url("../img/Icons/htmlacademy-logo.svg");
-  background-repeat: no-repeat;
-  background-size: auto;
+  width: 27px;
+  height: 35px;
+  margin-top: 9px;
+  margin-right: 10px;
+  color: $black;
+
   &:hover {
-    background-image: url("../img/Icons/htmlacademy-logo-blue.svg");
+    color: $blue;
   }
+
   &:active {
-    background-image: url("../img/Icons/htmlacademy-logo.svg");
+    color: $black;
     opacity: 0.3;
   }
 }
-

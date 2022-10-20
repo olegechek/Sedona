@@ -6,6 +6,7 @@
   padding-right: 20px;
   padding-bottom: 40px;
   text-align: center;
+  z-index: 999;
 }
 
 .feedback__header {
@@ -153,7 +154,7 @@
     display: block;
     position: absolute;
     width: 1px;
-    height: 292px;
+    height: 85%;
     background-color: $grey-disabled;
     top: 2px;
     left: -1px;

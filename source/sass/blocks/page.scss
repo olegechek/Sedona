@@ -9,6 +9,7 @@
   color: $grey-text;
   background-color: $grey;
   text-transform: uppercase;
+  overflow-wrap: anywhere;
 }
 
 .page__body {
@@ -18,10 +19,14 @@
   margin-left: auto;
   margin-right: auto;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
-
 }
 
 .page__body--container {
   margin-left: auto;
   margin-right: auto;
 }
+
+.dimmer {
+  filter: grayscale(100%);
+}
+
