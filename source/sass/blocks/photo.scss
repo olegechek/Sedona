@@ -117,7 +117,7 @@
     position: absolute;
     width: 23px;
     height: 21px;
-    background-image: url("../../img/Icons/like-icon-grey.svg");
+    background-image: url("../img/Icons/like-icon-grey.svg");
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
@@ -183,9 +183,6 @@
   .photo__item::after {
     display: none;
   }
-
-
-
 
 
   .photo__item:first-child {
@@ -279,10 +276,8 @@
   }
 
   .photo__likes {
-    left: 315px;
-
     &::before {
-      background-image: url("../../img/Icons/like-icon-white.svg");
+      background-image: url("../img/Icons/like-icon-white.svg");
     }
   }
 

@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
   <title>Sedona</title>
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
@@ -138,6 +138,13 @@
       </header>
       <div class="video__player">
         <picture>
+          <source type="image/webp" media="(min-width: 1200px)"
+            srcset="img/Photo/catalog/video-desktop.webp 1x, img/Photo/catalog/video-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/Photo/catalog/video-tablet.webp 1x, img/Photo/catalog/video-tablet@2x.webp 2x">
+          <source type="image/webp"
+            srcset="img/Photo/catalog/video-mobile.webp 1x, img/Photo/catalog/video-mobile@2x.webp 2x">
+
           <source media="(min-width: 1200px)"
             srcset="img/Photo/catalog/video-desktop.jpg 1x, img/Photo/catalog/video-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)"
@@ -153,19 +160,19 @@
           <button class="video__control-button button--replay">
             <span class="visually-hidden">Смотреть заново</span>
             <svg width="16" height="20">
-              <use xlink:href="img/Icons/svg-sprite.svg#replay"></use>
+              <use xlink:href="img/sprite.svg#replay"></use>
             </svg>
           </button>
           <button class="video__control-button button--subs">
             <span class="visually-hidden">Субтитры</span>
             <svg width="32" height="20">
-              <use xlink:href="img/Icons/svg-sprite.svg#subtitles"></use>
+              <use xlink:href="img/sprite.svg#subtitles"></use>
             </svg>
           </button>
           <button class="video__control-button button--fullscreen">
             <span class="visually-hidden">Полный экран</span>
             <svg width="20" height="20">
-              <use xlink:href="img/Icons/svg-sprite.svg#fullscreen"></use>
+              <use xlink:href="img/sprite.svg#fullscreen"></use>
             </svg>
           </button>
         </div>
@@ -196,13 +203,13 @@
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="visually-hidden">HTML Academy</span>
         <svg width="27" height="35">
-          <use xlink:href="img/Icons/svg-sprite.svg#html-logo"></use>
+          <use xlink:href="img/sprite.svg#html-logo"></use>
         </svg>
       </a>
     </div>
   </footer>
 
-  <script src="js/mobile-nav.js"></script>
+  <script src="js/mobile-nav.min.js"></script>
 
 </body>
 
