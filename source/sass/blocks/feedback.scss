@@ -38,10 +38,17 @@
   font-size: 14px;
   line-height: 26px;
   margin: 0 auto;
+}
+
+
+.feedback__item {
+  width: 100%;
   position: relative;
 }
 
-.feedback__item {
+
+.feedback__item legend {
+  width: 100%;
   position: relative;
 }
 
@@ -54,18 +61,20 @@
   background-color: $grey-disabled;
   top: 0px;
   left: -20px;
+  right: -20px;
 }
 
 
 .feedback__button {
   width: 280px;
+  min-height: 58px;
   font-family: "PT Sans", Arial, sans-serif;
   font-style: bold;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
-  padding-top: 19px;
-  padding-bottom: 19px;
+  padding-top: 17px;
+  padding-bottom: 12px;
 }
 
 .feedback__comment {
@@ -149,14 +158,20 @@
     display: none;
   }
 
+
   .feedback__item:nth-of-type(1) legend::before {
+    display: none;
+  }
+
+
+  .feedback__item:nth-of-type(1)::before {
     content: "";
     display: block;
     position: absolute;
     width: 1px;
-    height: 85%;
+    height: 105%;
     background-color: $grey-disabled;
-    top: 2px;
+    top: -65px;
     left: -1px;
   }
 
@@ -204,5 +219,4 @@
   .feedback__item:nth-of-type(n+2) legend::after {
     width: 280px;
   }
-
 }

@@ -2,6 +2,7 @@
   border: none;
   padding: 0;
   margin: 0;
+  width: 100%;
 }
 
 .attractions__legend {
@@ -10,7 +11,7 @@
   font-style: bold;
   color: $black;
   text-align: center;
-  width: 280px;
+  width: 100%;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -19,6 +20,7 @@
   padding-top: 16px;
   padding-right: 2px;
   padding-bottom: 37px;
+  margin: 0 auto;
 }
 
 .attractions__list {
@@ -30,7 +32,7 @@
 }
 
 .attractions__item {
-  margin-bottom: 54px;
+  margin-bottom: 53px;
 }
 
 
@@ -38,25 +40,23 @@
   margin-bottom: 38px;
 }
 
+
+.attractions__checkbox {
+  margin-left: 18px;
+  margin-right: 44px;
+}
+
 .attractions__item-label {
-  display: flex;
-  align-items: baseline;
   text-transform: none;
   color: $black;
   font-style: bold;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-}
-
-.attractions__checkbox {
-  order: -1;
-  margin-left: 21px;
-  margin-right: 44px;
   position: relative;
 }
 
-.attractions__checkbox::before {
+.attractions__item-label::before {
   content: "";
   display: block;
   position: absolute;
@@ -65,20 +65,20 @@
   border-radius: 5%;
   background-color: $grey-100;
   position: absolute;
-  top: -21px;
-  left: -20px;
+  top: -17px;
+  left: -79px;
 }
 
-.attractions__item-label:hover .attractions__checkbox::before {
+.attractions__item-label:hover::before {
   background-color: $grey-disabled;
 }
 
-.attractions__item-label:active .attractions__checkbox::before {
+.attractions__item-label:active::before {
   background-color: $grey-active;
 }
 
 
-.attractions__checkbox:checked:after {
+.attractions__checkbox:checked + .attractions__item-label::after {
   content: "";
   display: block;
   position: absolute;
@@ -88,14 +88,14 @@
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
-  top: -3px;
-  left: -4px;
+  top: 3px;
+  left: -62px;
 }
 
-.attractions__item-label:active .attractions__checkbox:checked:after {
+
+.attractions__checkbox:checked + .attractions__item-label:active:after {
   opacity: 0.3;
 }
-
 
 /********* T A B L E T     T U N E S **********************/
 
@@ -106,7 +106,6 @@
   .attractions__legend {
     display: block;
     font-size: 21px;
-    width: 400px;
     padding-top: 27px;
     padding-right: 3px;
     padding-bottom: 59px;
