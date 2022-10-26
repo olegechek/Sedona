@@ -151,7 +151,6 @@
 
 .features__headline br {
   display: none;
-
 }
 
 .features__headline--alternative {
@@ -279,6 +278,10 @@
 
   .features__headline br {
     display: inline;
+  }
+
+  .features__headline span {
+    display: none;
   }
 
   .features__number {
