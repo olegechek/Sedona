@@ -9,25 +9,25 @@
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2 crossorigin">
-  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2 crossorigin">
-  <meta name="viewport" content="width=device-width, initial-scale-1">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body class="page__body">
   <header class="page-header">
     <a class="page-header__logo" href="index.html">
       <picture>
-        <source media="(min-width: 1200px)" width="186" height="96" srcset="img/logotype-desktop.svg">
-        <source media="(min-width: 768px)" width="102" height="84" srcset="img/logotype-tablet.svg">
-        <img src="img/logotype-mobile.svg" alt="Символ города Седона">
+        <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+        <source media="(min-width: 768px)"  srcset="img/logotype-tablet.svg">
+        <img src="img/logotype-mobile.svg" width="102" height="84" alt="Символ города Седона">
       </picture>
     </a>
-    <button class="page-header__button" type="button">
+    <button class="page-header__button page-header__button--no-js" type="button">
       <span class="visually-hidden">Открыть меню</span>
     </button>
     <nav class="page-header__navigation page-header__navigation--mobile-closed page-header__navigation--no-js">
-      <button class="page-header__close-button" type="button">
+      <button class="page-header__close-button page-header__close-button--no-js" type="button">
         <span class="visually-hidden">Закрыть меню</span>
       </button>
       <ul class="site-list">
@@ -66,14 +66,14 @@
       <ul class="features__list">
 
         <li class="features__item features__item--alternative">
-          <div class="features__item--alternative-text-block">
+          <div class="features__item-text-block">
             <h3 class="features__headline features__headline--alternative">Настоящий<span>&thinsp;</span><br>городок</h3>
             <p class="features__number">— №1 —</p>
             <p class="features__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
-          <div class="features__item--alternative-img-block1"></div>
+          <div class="features__item-img-block1"></div>
 
-          <div class="hints features__item--alternative-hints-block">
+          <div class="hints">
             <h4 class="visually-hidden">На что стоит обратить внимание в этом городке?</h4>
             <ul class="hints__list">
               <li class="hints__item">
@@ -86,7 +86,7 @@
               </li>
               <li class="hints__item">
                 <h5 class="hints__headline">Еда</h5>
-                <p class="hints__description">Всегда заказывайте фирменный бургер, <nobr>вы не</nobr> разочаруетесь!</p>
+                <p class="hints__description">Всегда заказывайте фирменный бургер, <span>вы не</span> разочаруетесь!</p>
               </li>
             </ul>
           </div>
@@ -94,12 +94,12 @@
         </li>
 
         <li class="features__item features__item--alternative">
-          <div class="features__item--alternative-text-block">
+          <div class="features__item-text-block">
             <h3 class="features__headline features__headline--alternative">Там есть<span>&thinsp;</span><br>Мост дьявола</h3>
             <p class="features__number">— №2 —</p>
             <p class="features__description">Да, по нему можно пройти! <br>Eсли вы осмелитесь, конечно</p>
           </div>
-          <div class="features__item--alternative-img-block2"></div>
+          <div class="features__item-img-block2"></div>
         </li>
 
         <li class="features__item">
@@ -111,7 +111,7 @@
         <li class="features__item">
           <h3 class="features__headline">Красивая<span>&thinsp;</span><br>дорога</h3>
           <p class="features__number">— №4 —</p>
-          <p class="features__description">Ехать в Седону из <nobr>Лас-Вегаса</nobr> совсем <nobr>не скучно!</nobr>
+          <p class="features__description">Ехать в Седону из <span>Лас-Вегаса</span> совсем <span>не скучно!</span>
           </p>
         </li>
 
@@ -125,7 +125,7 @@
 
     <section class="booking">
       <h2 class="booking__headline">Заинтересовались?</h2>
-      <p class="booking__description">Укажите предполагаемые даты поездки, <nobr>и мы покажем вам лучшие</nobr>
+      <p class="booking__description">Укажите предполагаемые даты поездки, <span>и мы покажем вам лучшие</span>
         предложения гостиниц
         в седоне</p>
       <a class="button booking__link" href="#">Найти гостиницу</a>
