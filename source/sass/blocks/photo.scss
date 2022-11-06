@@ -174,6 +174,7 @@
 
   .photo__item {
     background-color: $grey-100;
+    align-self: stretch;
   }
 
   .photo__item::before {
@@ -203,12 +204,18 @@
     padding-right: 20px;
   }
 
+  .photo__name {
+    max-width: 190px;
+  }
+
   .photo__author {
+    max-width: 190px;
     padding-bottom: 17px;
   }
 
 
   .photo__likes {
+    max-width: 80px;
     position: absolute;
     top: 30px;
     right: 31px;
@@ -275,14 +282,15 @@
     width: 100%;
   }
 
+  .photo__name {
+    max-width: 260px;
+  }
+
+
   .photo__likes {
     &::before {
       background-image: url("../img/Icons/like-icon-white.svg");
     }
-  }
-
-  .photo__item:first-child .photo__likes {
-    left: 1117px;
   }
 
 

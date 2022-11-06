@@ -100,29 +100,29 @@
   }
 }
 
-.button--replay {
+.video__control-button--replay {
   margin-right: auto;
 }
 
-.button--replay svg {
+.video__control-button--replay svg {
   display: block;
   margin: 0;
   padding: 0;
   margin: auto auto;
 }
 
-.button--subs {
+.video__control-button--subs {
   margin-right: 3px;
 }
 
-.button--subs svg {
+.video__control-button--subs svg {
   display: block;
   padding: 0;
   margin: auto 0 auto auto;
 }
 
 
-.button--fullscreen svg {
+.video__control-button--fullscreen svg {
   margin: 0;
   padding: 0;
   margin: auto auto;
@@ -202,7 +202,7 @@
     }
   }
 
-  .button--subs {
+  .video__control-button--subs {
     margin-right: 6px;
   }
 }

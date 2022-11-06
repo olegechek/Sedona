@@ -9,25 +9,25 @@
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2 crossorigin">
-  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2 crossorigin">
-  <meta name="viewport" content="width=device-width, initial-scale-1">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body class="page__body">
   <header class="page-header">
     <a class="page-header__logo" href="index.html">
       <picture>
-        <source media="(min-width: 1200px)" width="186" height="96" srcset="img/logotype-desktop.svg">
-        <source media="(min-width: 768px)" width="102" height="84" srcset="img/logotype-tablet.svg">
-        <img src="img/logotype-mobile.svg" alt="Символ города Седона">
+        <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+        <img src="img/logotype-mobile.svg" width="102" height="84" alt="Символ города Седона">
       </picture>
     </a>
-    <button class="page-header__button" type="button">
+    <button class="page-header__button page-header__button--no-js" type="button">
       <span class="visually-hidden">Открыть меню</span>
     </button>
     <nav class="page-header__navigation page-header__navigation--mobile-closed page-header__navigation--no-js">
-      <button class="page-header__close-button" type="button">
+      <button class="page-header__close-button page-header__close-button--no-js" type="button">
         <span class="visually-hidden">Закрыть меню</span>
       </button>
       <ul class="site-list">
@@ -55,7 +55,6 @@
         width="282" height="214" alt="Надпись Седона">
     </section>
 
-
     <section class="photo">
       <header class="photo__header">
         <h2 class="photo__title">Фото и видео</h2>
@@ -73,9 +72,8 @@
             <picture class="photo__image-too">
               <source type="image/webp"
                 srcset="img/Photo/catalog/evening-road-all.webp 1x, img/Photo/catalog/evening-road-all@2x.webp 2x">
-              <source media="(min-resolution: 2dppx)" srcset="img/Photo/catalog/evening-road-all@2x.jpg">
-              <img class="photo__image" src="img/Photo/catalog/evening-road-all.jpg" width="1200" height="400"
-                alt="Вечерняя дорога">
+              <img class="photo__image" src="img/Photo/catalog/evening-road-all.jpg"
+                srcset="img/Photo/catalog/evening-road-all@2x.jpg 2x" width="1200" height="400" alt="Вечерняя дорога">
             </picture>
           </div>
         </li>
@@ -89,9 +87,8 @@
             <picture class="photo__image-too">
               <source type="image/webp"
                 srcset="img/Photo/catalog/local-fauna-all.webp 1x, img/Photo/catalog/local-fauna-all@2x.webp 2x">
-              <source media="(min-resolution: 2dppx)" srcset="img/Photo/catalog/local-fauna-all@2x.jpg">
-              <img class="photo__image" src="img/Photo/catalog/local-fauna-all.jpg" width="400" height="267"
-                alt="Местный кактус">
+              <img class="photo__image" src="img/Photo/catalog/local-fauna-all.jpg"
+                srcset="img/Photo/catalog/local-fauna-all@2x.jpg 2x" width="400" height="267" alt="Местный кактус">
             </picture>
           </div>
         </li>
@@ -105,9 +102,8 @@
             <picture class="photo__image-too">
               <source type="image/webp"
                 srcset="img/Photo/catalog/forest-road-all.webp 1x, img/Photo/catalog/forest-road-all@2x.webp 2x">
-              <source media="(min-resolution: 2dppx)" srcset="img/Photo/catalog/forest-road-all@2x.jpg">
-              <img class="photo__image" src="img/Photo/catalog/forest-road-all.jpg" width="400" height="267"
-                alt="Дорога через лес">
+              <img class="photo__image" src="img/Photo/catalog/forest-road-all.jpg"
+                srcset="img/Photo/catalog/forest-road-all@2x.jpg 2x" width="400" height="267" alt="Дорога через лес">
             </picture>
           </div>
         </li>
@@ -121,9 +117,8 @@
             <picture class="photo__image-too">
               <source type="image/webp"
                 srcset="img/Photo/catalog/devils-bridge-all.webp 1x, img/Photo/catalog/devils-bridge-all@2x.webp 2x">
-              <source media="(min-resolution: 2dppx)" srcset="img/Photo/catalog/devils-bridge-all@2x.jpg">
-              <img class="photo__image" src="img/Photo/catalog/devils-bridge-all.jpg" width="400" height="267"
-                alt="Скалистая арка">
+              <img class="photo__image" src="img/Photo/catalog/devils-bridge-all.jpg"
+                srcset="img/Photo/catalog/devils-bridge-all@2x.jpg 2x" width="400" height="267" alt="Скалистая арка">
             </picture>
           </div>
         </li>
@@ -143,7 +138,6 @@
             srcset="img/Photo/catalog/video-tablet.webp 1x, img/Photo/catalog/video-tablet@2x.webp 2x">
           <source type="image/webp"
             srcset="img/Photo/catalog/video-mobile.webp 1x, img/Photo/catalog/video-mobile@2x.webp 2x">
-
           <source media="(min-width: 1200px)"
             srcset="img/Photo/catalog/video-desktop.jpg 1x, img/Photo/catalog/video-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)"
@@ -156,19 +150,19 @@
           <div class="video__timescale-toggle" tabindex="0" style="left: 20%"></div>
         </div>
         <div class="video__control">
-          <button class="video__control-button button--replay">
+          <button class="video__control-button video__control-button--replay">
             <span class="visually-hidden">Смотреть заново</span>
             <svg width="16" height="20">
               <use xlink:href="img/sprite.svg#replay"></use>
             </svg>
           </button>
-          <button class="video__control-button button--subs">
+          <button class="video__control-button video__control-button--subs">
             <span class="visually-hidden">Субтитры</span>
             <svg width="32" height="20">
               <use xlink:href="img/sprite.svg#subtitles"></use>
             </svg>
           </button>
-          <button class="video__control-button button--fullscreen">
+          <button class="video__control-button video__control-button--fullscreen">
             <span class="visually-hidden">Полный экран</span>
             <svg width="20" height="20">
               <use xlink:href="img/sprite.svg#fullscreen"></use>

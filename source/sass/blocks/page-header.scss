@@ -13,6 +13,11 @@
   transform: translateX(-50%);
 }
 
+.page-header__logo img {
+  width: 102px;
+  height: 84px;
+}
+
 
 .page-header__button {
   position: absolute;
@@ -32,6 +37,10 @@
   &:active {
     opacity: 0.3;
   }
+}
+
+.page-header__button--no-js {
+  display: none;
 }
 
 
@@ -64,6 +73,10 @@
     &:active {
       opacity: 0.3;
     }
+  }
+
+  .page-header__close-button--no-js {
+    display: none;
   }
 
   .page-header__navigation--mobile-closed {
@@ -104,3 +117,12 @@
   }
 }
 
+/********* D E S K T O P     T U N E S **********************/
+
+@media (min-width: $desktop-width) {
+  .page-header__logo img {
+    width: 186px;
+    height: 96px;
+  }
+
+}

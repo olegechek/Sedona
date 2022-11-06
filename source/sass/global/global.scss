@@ -32,3 +32,7 @@ img {
 .cutout {
   display: none;
 }
+
+.dimmer {
+  filter: grayscale(100%);
+}

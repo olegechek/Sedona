@@ -40,7 +40,11 @@
   line-height: 24px;
 }
 
-.success-box__button--wrapper {
+.success-box__text span {
+  white-space: nowrap;
+}
+
+.success-box__button-box {
   display: block;
   width: 320px;
   padding: 20px 0px 20px 0px;
@@ -77,7 +81,7 @@
     padding: 0px 80px 39px 80px;
   }
 
-  .success-box__button--wrapper {
+  .success-box__button-box {
     width: 640px;
     padding: 45px 0px 45px 0px;
   }

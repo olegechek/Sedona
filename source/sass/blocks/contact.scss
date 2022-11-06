@@ -90,6 +90,7 @@
   background-color: $white;
   outline: none;
   border: 4px solid $grey-disabled;
+  padding-left: 18px;
 }
 
 .contact__data::-webkit-input-placeholder {
@@ -100,6 +101,7 @@
 .contact__data--failure:placeholder-shown {
   outline: none;
   border: 2px solid red;
+  padding-left: 20px;
 }
 
 
