@@ -1,12 +1,5 @@
 .social {
-  display: block;
-  background-color: $white;
-}
-
-.social__list {
   list-style: none;
-  padding:0 20px;
-  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -35,6 +28,7 @@
   height: 48px;
   background-repeat: no-repeat;
   background-position: center;
+
   &:active {
     opacity: 0.3;
   }

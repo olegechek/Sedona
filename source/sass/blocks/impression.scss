@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
   width: 100%;
+  padding-bottom: 2px;
 }
 
 .impression__legend {
@@ -26,6 +27,7 @@
   text-align: left;
   padding: 0;
   width: 280px;
+  padding-left: 3px;
   margin: 0 auto;
 }
 
@@ -140,6 +142,11 @@
 
 @media (min-width: $desktop-width) {
 
+  .impression {
+    padding: 0;
+    margin: 0;
+  }
+
   .impression__legend {
     width: 480px;
     padding-left: 79px;
@@ -147,7 +154,6 @@
 
   .impression__list {
     width: 480px;
-    padding-left: 5px;
+    padding-left: 8px;
   }
 }
-

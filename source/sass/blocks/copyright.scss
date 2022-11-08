@@ -1,27 +1,18 @@
-.copyright {
-  background-color: $white;
-  display: flex;
-  justify-content:space-between;
-  width: 148px;
-  margin: 0 auto;
-}
 
-.copyright__text {
-  display: block;
-  height: 35px;
+.copyright {
+  display: flex;
+  justify-content:center;
+  column-gap: 10px;
+  align-items: center;
   font-style: normal;
   font-size: 14px;
   line-height: 26px;
-  margin-left: 8px;
-
 }
 
 .copyright__link {
-  display: block;
+
   width: 27px;
   height: 35px;
-  margin-top: 9px;
-  margin-right: 10px;
   color: $black;
 
   &:hover {

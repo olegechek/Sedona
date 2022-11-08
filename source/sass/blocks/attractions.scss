@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
   width: 100%;
+  padding-bottom: 3px;
 }
 
 .attractions__legend {
@@ -27,6 +28,7 @@
   list-style: none;
   text-align: left;
   padding: 0;
+  padding-left: 3px;
   width: 280px;
   margin: 0 auto;
 }
@@ -112,15 +114,14 @@
   .attractions__legend {
     display: block;
     font-size: 21px;
-    padding-top: 27px;
-    padding-right: 3px;
+    padding-right: 5px;
     padding-bottom: 59px;
     padding-top: 6px;
   }
 
   .attractions__list {
-    min-width: 648px;
-    max-width: 970px;
+    min-width: 651px;
+    max-width: 973px;
     width: auto;
     display: flex;
     flex-wrap: wrap;
@@ -151,7 +152,7 @@
     min-width: 960px;
     max-width: 960px;
     padding-left: 3px;
-    padding-bottom: 61px;
+    padding-bottom: 59px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     row-gap: 40px;

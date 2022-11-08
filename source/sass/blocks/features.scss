@@ -1,5 +1,5 @@
 .features {
-  background-color: $white;
+  background-color: $grey;
   text-align: center;
   padding: 0;
   margin: 0;
@@ -8,6 +8,7 @@
 .features__header {
   position: relative;
   padding-bottom: 10px;
+  background-color: $white;
 }
 
 .features__header::after {
@@ -61,10 +62,18 @@
   background-color: $grey;
   margin: 0;
   padding-top: 27px;
-  padding-bottom: 25px;
+  padding-bottom: 24px;
   padding-left: 35px;
   padding-right: 35px;
   min-height: 168px;
+}
+
+.features__item:not(:last-of-type):nth-of-type(n+3) {
+  border-bottom: 1px solid $grey-250;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 18px;
+  margin-right: 18px;
 }
 
 .features__item--alternative {
@@ -72,20 +81,13 @@
   padding: 0;
   margin: 0;
   height: auto;
+  display: grid;
 }
 
-.features__item-text-block {
+
+.features__item--alternative:nth-of-type(1)::after {
+  content: "";
   display: block;
-  background-color: $blue;
-  color: $white;
-  min-height: 190px;
-  padding-top: 39px;
-  padding-bottom: 25px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.features__item-img-block1 {
   height: 260px;
   width: 100%;
   padding: 0;
@@ -95,6 +97,7 @@
   background-repeat: no-repeat;
   background-size: 520px 260px;
   background-position: center bottom;
+  order: -1;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/Photo/features/features-real-town-mobile@2x.jpg");
@@ -112,7 +115,9 @@
 }
 
 
-.features__item-img-block2 {
+.features__item--alternative:nth-of-type(2)::after {
+  content: "";
+  display: block;
   height: 260px;
   width: 100%;
   padding: 0;
@@ -122,6 +127,7 @@
   background-repeat: no-repeat;
   background-size: 520px 260px;
   background-position: center bottom;
+
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/Photo/features/features-devil-bridge-mobile@2x.jpg");
@@ -137,6 +143,19 @@
     }
   }
 
+}
+
+
+.features__item-text-block {
+  display: block;
+  background-color: $blue;
+  color: $white;
+  min-height: 190px;
+  padding-top: 39px;
+  padding-bottom: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  order: -1;
 }
 
 
@@ -215,6 +234,13 @@
     padding-right: 30px;
   }
 
+  .features__item:not(:last-of-type):nth-of-type(n+3) {
+    border-bottom: none;
+    margin: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
   .features__item--alternative {
     padding: 0;
     margin: 0;
@@ -222,20 +248,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column: span 3;
-    grid-row: span 2;
     align-items: end;
   }
 
-  .features__item-text-block {
-    height: 256px;
-    min-width: 256px;
-    padding-top: 45px;
-    padding-bottom: 25px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
 
-  .features__item-img-block1 {
+  .features__item--alternative:nth-of-type(1)::after {
     grid-column: span 2;
     background-image: url("../img/Photo/features/features-real-town-tablet.jpg");
     background-size: 512px 256px;
@@ -254,11 +271,11 @@
     }
   }
 
-  .features__item-img-block2 {
+  .features__item--alternative:nth-of-type(2)::after {
     grid-column: span 2;
     background-image: url("../img/Photo/features/features-devil-bridge-tablet.jpg");
     background-size: 512px 256px;
-    order: -1;
+    order: -2;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/Photo/features/features-devil-bridge-tablet@2x.jpg");
@@ -274,6 +291,17 @@
       }
     }
   }
+
+
+  .features__item-text-block {
+    height: 256px;
+    min-width: 256px;
+    padding-top: 45px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
 
   .features__headline {
     font-size: 21px;

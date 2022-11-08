@@ -2,7 +2,7 @@
   background-color: $white;
   min-height: 243px;
   padding: 0;
-  padding-top: 36px;
+  padding-top: 39px;
   margin: 0;
   text-align: center;
 }
@@ -14,18 +14,20 @@
   font-size: 21px;
   line-height: 26px;
   padding: 0;
-  padding-bottom: 35px;
-  padding-right: 1px;
   margin: 0;
+  margin-bottom: 35px;
 }
 
 .page-footer__social {
-  display: block;
-  padding-bottom: 28px;
-  padding-right: 2px;
-
+  padding: 0;
+  margin: 0;
+  margin-bottom: 35px;
 }
 
+.page-footer__copyright {
+  padding: 0;
+  margin: 0;
+}
 
 /********* T A B L E T     T U N E S **********************/
 
@@ -36,6 +38,7 @@
     margin: 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
     align-items: center;
   }
 
@@ -45,15 +48,9 @@
   }
 
   .page-footer__social {
-    padding: 0;
-    margin: 0;
+    margin-bottom: 0;
   }
 
-  .page-footer__copyright {
-    padding: 0;
-    margin: 0;
-    padding-left: 6px;
-  }
 }
 
 
@@ -61,23 +58,7 @@
 
 @media (min-width: $desktop-width) {
   .page-footer {
-    column-gap: 30px;
-  }
-
-  .page-footer__hashtag {
-    padding: 0;
-    margin: 0;
     padding-top: 5px;
-    padding-right: 5px;
+    column-gap: 40px;
   }
-
-  .page-footer__copyright {
-    padding: 0;
-    margin: 0;
-    padding-left: 9px;
-    padding-top: 1px;
-  }
-
-
-
 }
